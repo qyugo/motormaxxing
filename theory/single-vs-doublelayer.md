@@ -1,13 +1,4 @@
 # **Three-Phase Motor Winding Configurations**
-## Intro and Review
-First, this document will describe the construction of three-phase motors. Two-phase or one-phase motors will not be addressed here, as they are far less common in BLDCs.
-
-It is important to consider and understand the difference between different winding parameters, such as:
-
-1. Single and double-layer,
-2. Distributed vs. concentrated windings,
-4. Series vs. parallel windings.
-
 
 While researching motor construction, oftentimes I found that concepts were seemingly kept behind a layer of abstraction, whether it be intuitive for the motor overlords or a trade secret, as Hanselman himself acknowledged, but either way, there is a lack of a coherent explanation for what motor windings actually constitute.
 
