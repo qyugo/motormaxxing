@@ -1,5 +1,6 @@
 # motormaxxing
 References and Examples for Actuator Crafting. 
+Self-learning and practice of applying the principles described in _Brushless PM Motor Design_ by Duane Hanselman (1994).
 This repository contains the following sub-projects:
 
 **1. Python Winding Calculator**
@@ -11,5 +12,5 @@ Output: Turns per tooth, strands per bundle.
 Utilizes winding config calculator from https://www.hlaboratories.com/tools/bldc-winding .
 Air gap theory, CAD, build
 
-**3. Motor Characterization**
+**3. Motor Characterization (In Progress)**
 For testing and validating motor characteristics.
