@@ -1,3 +1,15 @@
+## Introduction
+First, this document will describe the construction of three-phase motors. Two-phase or one-phase motors will not be addressed here, as they are far less common in BLDCs.
+
+It is important to consider and understand the difference between different winding parameters, such as:
+
+1. Distributed vs. concentrated windings,
+2. Single and double-layer,
+3. Series vs. parallel windings,
+4. Star (Wye) vs. Delta termination,
+5. Winding factor (kw),
+6. PM rotor magnet construction (geometry, air gap, skewing)
+
 # Distributed vs. Concentrated Windings and its Implications
 Simply put, a concentrated winding is one where each coil wraps a single tooth, while a coil in a distributed winding can span multiple teeth.
 
