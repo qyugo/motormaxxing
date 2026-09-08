@@ -1,12 +1,13 @@
 # **Three-Phase Motor Winding Configurations**
 ## Intro and Review
-First, this document will describe the construction of three-phase motors.
+First, this document will describe the construction of three-phase motors. Two-phase or one-phase motors will not be addressed here, as they are far less common in BLDCs.
 
 It is important to consider and understand the difference between different winding parameters, such as:
 
 1. Single and double-layer,
 2. Distributed vs. concentrated winding in motors,
 3. Series vs. parallel windings.
+
 
 While researching motor construction, oftentimes I found that concepts were seemingly kept behind a layer of abstraction, whether it be intuitive for the motor overlords or a trade secret, as Hanselman himself acknowledged, but either way, there is a lack of a coherent explanation for what motor windings actually constitute.
 
@@ -46,7 +47,7 @@ Using the **BLDC Winding** visualizer from _hlaboratories.com_, using this repo'
 <img width="528" height="514" alt="Screenshot 2026-09-08 at 12 53 52 PM" src="https://github.com/user-attachments/assets/003043ae-29ed-478c-be52-63af2c836059" />
 
 Each of the 36 teeth are wound, so we can assume double-layer. 
-The calculator presents a letter-type description of the **teeth** denoting phases A, B, C, and a lowercase a, b, and c being opposite direction to it's same-letter counterpart, as shown by the following:
+The calculator presents a letter-type description of the **teeth** denoting phases A, B, C (+), and a lowercase a, b, and c (-) being opposite direction to it's same-letter counterpart, as shown by the following:
 
 <img width="974" height="162" alt="Screenshot 2026-09-08 at 1 09 19 PM" src="https://github.com/user-attachments/assets/fe301c21-77ea-44b5-ab12-0b2ca066df5e" />
 
@@ -54,10 +55,22 @@ We can understand now that a clockwise and a counterclockwise winding of each ph
 
 Here I have wound one A phase on an empty stator with 36 teeth, for a more practical visualization:
 
-<img src="https://github.com/user-attachments/assets/8cd07fa5-f778-471f-b842-35365dd99a58" width="50%">
+**_Double Layer Config:_**
 
+<img src="https://github.com/user-attachments/assets/8cd07fa5-f778-471f-b842-35365dd99a58" width="50%"> 
+<img src="https://github.com/user-attachments/assets/6c4fa08e-212e-40e1-ba08-10ce7e5e6c81" width="45%"> 
 
+We can see visually the clockwise-counterclockwise pair of one phase being adjacent, resulting in "two coil sides (top and bottom) per stator slot." In other words, the space between two neighboring teeth will contain two windings. 
 
+Although, I still think this is a bad descriptor presented by Google articles. As phase B is wound in following phase A, you'll see the A- and the B- (or lowercase a and b) are adjacent, so it is not an alternating clockwise-counterclockwise winding [+ - + - + - + - ...], but rather a [+ + - - + + - - ...]
+
+**Confusion - Slot Winding Descriptor**
+
+Possible confusion is if you come across a similar letter-based descriptor as provided above (using A, a, B, b, C, c) that describes each _slot_ instead of each _tooth_. Here is a slot descriptor of a single-layer and a double-layer winding:
+
+<img width="664" height="159" alt="Screenshot 2026-09-08 at 1 27 39 PM" src="https://github.com/user-attachments/assets/bf0911c5-9659-4a92-8632-f3fe7cda722d" />
+
+If you notice, the _single layer **slot** descriptor_ looks like the _double layer **teeth** descriptor_ (AabBCc...).
 
 
 
