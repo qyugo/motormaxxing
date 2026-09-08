@@ -32,8 +32,10 @@ For parallel windings, the back-EMFs are kept low, resulting in a higher KV, low
 
 Much of the voltage difference is due to the coil resistance attributes:
 
-For a parallel winding, the phase resistance _R_phase_ = R_coil / N_teeth_per_phase.
-For a series winding, _R_phase_ = R_coil * N_teeth_per_phase.
+For a **parallel winding**, the phase resistance _R_phase_ = R_coil / N_teeth_per_phase.
+For a **series winding**, _R_phase_ = R_coil * N_teeth_per_phase.
+
+And finally, more strands per bundle will decrease the phase resistance via a separate mechanism, by making the effective strand "fatter."
 
 ## Next Up
 Additionally, voltage and current characteristics can be modified by terminating the windings in either **Delta** or **Star** (also known as Wye or Y-configuration. This will be discussed in the next module.
