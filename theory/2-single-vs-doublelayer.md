@@ -1,4 +1,7 @@
-# **Three-Phase Motor Winding Configurations**
+## Objective
+In this section, **single vs. double layer** winding configurations will be discussed, as well as a clarification of **series vs. parallel coil winding** and how it differs from **strand count**. There are many sources online that I have come across that are unclear or incorrect about the distinctions of motor winding configurations.
+
+# **Single vs. Double Layer Winding Configs**
 
 While researching motor construction, oftentimes I found that concepts were seemingly kept behind a layer of abstraction, whether it be intuitive for the motor overlords or a trade secret, as Hanselman himself acknowledged, but either way, there is a lack of a coherent explanation for what motor windings actually constitute.
 
