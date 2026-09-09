@@ -32,6 +32,8 @@ For the purposes of this repository, an outrunner BLDC motor is assumed and cons
 <hr width="30%">
 Source: https://ican-motor.com/bldc-motor-specifications-about-motor-selection/
 
+## 3. Rotormaxxing
+
 ## Permanent Magnet Rotor Structure and Air Gap (Rotormaxxing)
 The structure of the PM rotor can influence motor characteristics such as torque output, flux linkage, and _cogging torque._
 
@@ -103,5 +105,8 @@ $K_e = K_t$
 
 $\tau = K_t * I$, where $\tau$ is the torque (N*m), and I is the current (A).
 
+## Magnet Skew
+
+## Statormaxxing
 
 
