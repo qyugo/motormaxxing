@@ -9,8 +9,7 @@ Inputs: Copper AWG, copper thermal resistance, stator tooth area, current target
 Output: Turns per tooth, strands per bundle.
 
 **2. Example Crafting of 36N42P BLDC Outrunner Motor**
-Utilizes winding config calculator from https://www.hlaboratories.com/tools/bldc-winding .
-Air gap theory, CAD, build
+Utilizes winding config calculator from https://www.hlaboratories.com/tools/bldc-winding.
 
 **3. Motor Characterization (In Progress)**
 For testing and validating motor characteristics.
