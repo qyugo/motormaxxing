@@ -40,13 +40,14 @@ Generally, a circular array of rectangular neodymium-iron-boron (NdFeB) magnets 
 
 The material of the rotor shell to house the magnets is also considered. In general, the only 'useful' magnetic flux from the PMs is that directed inwards towards the stator, so generally a ferromagnetic material is selected to maximize efficiency and torque.
 
-The following image is from a video by Aaed Musa on YouTube, comparing the magnetic fields of that of a 3D-printed rotor shell as well as a steel shell.
+The following image (left) is from a video by Aaed Musa on YouTube, comparing the magnetic fields of that of a 3D-printed rotor shell as well as a steel shell.
 
 <img src="https://github.com/user-attachments/assets/708217f4-bc75-4223-af83-3f238113f0af" width="45%"> 
+<img src="https://github.com/user-attachments/assets/5b4dc9a5-03d7-4704-b6b5-cb621d23c948" width="25%"> 
 
-As observed, a steel shell is effective at directing the PM flux inwards. Many DC motors also implement a _flux ring_ for this exact purpose:
+As observed, a steel shell is effective at directing the PM flux inwards. Many DC motors also implement a _flux ring_ for this exact purpose (image on right).
 
-<img src="https://github.com/user-attachments/assets/5b4dc9a5-03d7-4704-b6b5-cb621d23c948" width="45%"> 
+
 
 
 **Flux Linkage**: 
