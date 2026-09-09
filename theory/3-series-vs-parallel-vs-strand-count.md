@@ -9,7 +9,7 @@ More strands in a "bundle" would not affect the effective _turn count_ **(T)**; 
 
 <img src="https://github.com/user-attachments/assets/f7e021ef-c715-4308-97bc-716d9e6ddc0c" width="50%"> 
 
-Summary: The term "Strand Count" does not affect the attributes of the circuit, but rather it's current-carrying capacity.
+Summary: The term "Strand Count" does not affect the attributes of the circuit, but rather each motor phase's current tolerance and phase resistance, the same way a thicker wire (smaller AWG gauge) would.
 
 ## Series vs. Parallel Winding
 
