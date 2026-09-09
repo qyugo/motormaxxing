@@ -35,7 +35,7 @@ Source: https://ican-motor.com/bldc-motor-specifications-about-motor-selection/
 ## Permanent Magnet Rotor Structure and Air Gap (Rotormaxxing)
 The structure of the PM rotor can influence motor characteristics such as torque output, flux linkage, and _cogging torque._
 
-###Rotor Shell and Magnets
+### Rotor Shell and Magnets
 Generally, a circular array of rectangular neodymium-iron-boron (NdFeB) magnets are used in BLDC rotors. Neodymium magnets can possess a strength grade from N35 to N52. The magnet grade as well as its thickness can offer parameters for adjusting PM strength.
 
 The material of the rotor shell to house the magnets is also considered. In general, the only 'useful' magnetic flux from the PMs is that directed inwards towards the stator, so generally a ferromagnetic material is selected to maximize efficiency and torque.
@@ -47,12 +47,61 @@ The following image (left) is from a video by Aaed Musa on YouTube, comparing th
 
 As observed, a steel shell is effective at directing the PM flux inwards. Many DC motors also implement a _flux ring_ for this exact purpose (image on right).
 
+### Air Gap Length vs. Air Gap Radius
+Once again, confusion strikes with Google-based motor researching. This time is the distinction between two distinct terms: _air gap length_ and _air gap radius_. Occasionally these can be conflated.
+
+The airgap is characterized by the empty space between the PM magnets and the stator teeth. Generally, a distance of 1mm or less is found here.
+
+A smaller airgap is accompanied by a higher motor torque, as well as a higher cogging torque (a subtle step-like motion exhibited in concentrated winding-type motors, as the PMs rotate past its nearest coil).
+
+The following figures provide a torque and cogging torque comparison for inrunner BLDC motors.
+
+<img src="https://github.com/user-attachments/assets/fd9aeda9-7bcb-410e-a78e-02e0143d62d1" width="50%"> 
+<img src="https://github.com/user-attachments/assets/227d6c13-86a0-4129-8e63-444387d25b50" width="48%"> 
 
 
+<hr width="30%">
+Source: https://www.emworks.com/en/blog/motor-design/effect-of-airgap-length-on-bldc-machine-performance
 
-**Flux Linkage**: 
-The concept of flux linkage is commonly used to describe the interactions of the generated magnetic fields through the inductor-like windings on each stator tooth.
+The same attributes can be seen in outrunner motors.
+
+Gap Radius (or Air Gap Radius)
+The length from the center of the motor to the midpoint of the airgap mentioned above (the space between the rotor and the stator), effectively operating as the **moment arm** for torque generation in equations. This is where we can see a distinction between inrunner and outrunner motors: as the PMs are farther from the center than inrunners, there is generally a much larger gap radius, consistent with its higher torque expectation.
+
+
+### Flux Linkage
+The concept of flux linkage is commonly used to describe the interactions of the generated magnetic fields through the inductor-like windings on each stator tooth. A smaller airgap radius will enhance the back-EMF.
 
 According to Faraday's Law, any change in flux linkage over time generates a _back-EMF._
+
+$E = -N \frac{d\phi}{dt}$
+
+Where E is the induced back-EMF voltage (V), $\phi$ is the flux per coil (Wb, V*s or T*m^2).
+
+$\therefore$  $N\phi = \lambda$ = total flux linkage for N coil turns. 
+
+### Back-EMF, Ke and Kt
+The term 'back-EMF' will be referenced multiple times throughout this repository. 
+
+Back-EMF is an electromotive force that is generated as a motor spins, that opposes the direction of the input force.
+
+It is also proportional to the motor's angular speed, and as such it can be measured during motor operation to indirectly measure the motor speed in **sensorless** motor control. 
+
+This gives us another relationship:
+
+$E = k_e * \omega$
+
+Where E is the back-emf (V), $\omega$ is the angular speed in rad/s, and $k_e$ being the back-EMF constant, in V/rad/s, or sometimes V/kRPM.
+
+Fun fact: Motor speed caps out when the input motor voltage equals the back-EMF.
+
+Finally, we can establish a relation to the torque constant $K_t$:
+
+$K_e = K_t$ 
+
+*These numbers are actually the same when standardizing for units and for an _ideal case_, meaning no mechanical drag or magnetic saturation.
+
+$\tau = K_t * I$, where $\tau$ is the torque (N*m), and I is the current (A).
+
 
 
