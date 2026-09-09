@@ -5,7 +5,7 @@ In this section, a clarification of **series vs. parallel coil winding** will be
 
 Strand count would be the _number of parallel wire strands in each conductor_. This will be used later on to effectively make the wire of each phase (thicker) with more wires running the same A path, B path, etc. This is done to make the current-carrying capacity of each phase larger by increasing the effective cross-sectional copper area of each phase.
 
-More strands in a "bundle" would not affect the effective turn count; for example, in the following partial construction of an 8110 36N42P motor of just the A phase, I did 8 turns per tooth, and used a strand count of 3. Basically, three strands are following the wiring config of A, but the effective turn count is still 8, not 24.
+More strands in a "bundle" would not affect the effective _turn count_ **(T)**; for example, in the following partial construction of an 8110 36N42P motor of just the A phase, I did 8 turns per tooth, and used a strand count of 3. Basically, three strands are following the wiring config of A, but the effective turn count (T) is still 8, not 24.
 
 <img src="https://github.com/user-attachments/assets/f7e021ef-c715-4308-97bc-716d9e6ddc0c" width="50%"> 
 
