@@ -23,7 +23,7 @@ The top image in the figure above shows a series winding. In a series winding, t
 
 The middle image in the figure shows an example of a parallel path, specifically "2 parallel paths" in this case.
 
-The bottom image shows one series path, effectively functioning the same as the top image but with a "thicker" wire, but with two strands, also can be characterized as "internally split up into two parallel paths." This is where some confusion may arise.
+The bottom image shows one series path, effectively functioning the same as the top image, but is composed of two strands, which functions as a "thicker" single wire. Sometimes, this also can be characterized as "internally split up into two parallel paths," which may raise some confusion.
 
 ## Performance Characteristics
 In series windings, the back-EMF of each coil adds to the next, so the total would be the sum of the BEMF of all coils. More coils in series would usually constitute a lower KV, higher torque per amp, and requiring _higher voltage_ for operation and _less current_ draw.
