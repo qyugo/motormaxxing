@@ -32,10 +32,51 @@ For the purposes of this repository, an outrunner BLDC motor is assumed and cons
 <hr width="30%">
 Source: https://ican-motor.com/bldc-motor-specifications-about-motor-selection/
 
-## 3. Rotormaxxing
+## 3. Statormaxxing
 
-## Permanent Magnet Rotor Structure and Air Gap (Rotormaxxing)
-The structure of the PM rotor can influence motor characteristics such as torque output, flux linkage, and _cogging torque._
+The stator is the stationary element in a motor. In all BLDCs, the stator houses copper coils that function as variable inductors to generate a moving magnetic field. Windings will be discussed in the next module, but this section will talk about the bare-bones construction of the stator _core_.
+
+Stators can either be the outer component (inrunner BLDC), or the inner component (outrunner), and are comprised of several "teeth" (where copper is wound across) and equivalent "slots" (the space between each teeth). In three-phase motors, the number of teeth and slots are always a multiple of 3.
+
+<img src="https://github.com/user-attachments/assets/45c5c600-b48c-4a15-9497-49da97b87930" width="45%"> 
+<img src="https://github.com/user-attachments/assets/299bd69b-f38a-42b5-8c1b-0221c37277d2" width="41%"> 
+
+
+
+Eddy current is a current loop that occurs within a piece of conductive material as a moving magnetic field, such as that of a spinning motor, is introduced in its vicinity. 
+
+However, with any current loop, there can be a resistance dependent on the length of the loop, which inevitably can cause power loss according to the relation $I^2R$. 
+
+Therefore, the stator of a BLDC is commonly constructed from a stacked lamination of silicon steel sheets. This stack is effective at breaking up eddy currents into several smaller current "loops," thereby reducing eddy current loss. 
+
+<img src="https://github.com/user-attachments/assets/f587a38e-1ace-4b95-89a9-cefa195da36a" width="45%"> 
+
+Source: https://www.allaboutcircuits.com/technical-articles/eddy-current-loss-what-it-is-and-how-to-reduce-it-with-laminated-cores/
+
+The image on the left shows a changing flux B and its resultant eddy current formulation in a stator with laminations stacked _parallel_ to the current loops. The image on the right shows the example of laminate stacking _normal_ to the loops, which evidently does not change the size of the loops, and ineffective at reducing power dissipation.
+
+<img src="https://github.com/user-attachments/assets/25b9917d-0150-4c00-af3e-b7a1df245a13" width="45%"> 
+
+Source: Hendrik Vansompel (2012). "Evaluation of a Simple Lamination Stacking Method for the Teeth of an Axial Flux Permanent-Magnet Synchronous Machine With Concentrated Stator Windings." 
+
+The mechanical construction of the stator core will affect the available space for copper to be wound for N turns, as well as the mean turn length of each coil. These dimensions are independent of KV, kt, and torque production.
+
+<img src="https://github.com/user-attachments/assets/43ecae50-6b85-4873-b29a-7349ced2df8f" width="50%"> 
+<img src="https://github.com/user-attachments/assets/574fdac0-b4ba-4c1e-9395-c9f14eb6a771" width="45%"> 
+
+**Limitations in this Repo:**
+
+In the calculator and derivations, the values for slot and tooth width/depth and stator stack lengths are inputted by the user. Approximate measurements are assumed, as the variables will only affect the "fill factor" - the feasibility of wiring N strands for N turns in a given stator, as well as the resistance and power dissipation chain. 
+
+Furthermore, fillets on the stator core, winding imperfections, and buildup length can create small imperfections. Regardless, a tolerance variable is provided, and these estimations can be produced. Additionally, an estimation of copper length required for a single phase can be calculated.
+
+## 4. Rotormaxxing
+
+Characterization Note:
+Motors can be characterized by size, and slot/pole configurations. For instance, a 36N42P motor with a 8110 stator core would have 36 teeth, 42 permanent magnet slots (always divisible by 2), with 21 pole pairs, a stator diameter of 81mm, and a stack length of 10mm.
+
+## Permanent Magnet Rotor Structure
+The structure of the PM rotor can influence motor characteristics such as torque output, flux linkage, and _cogging torque._ 
 
 ### Rotor Shell and Magnets
 Generally, a circular array of rectangular neodymium-iron-boron (NdFeB) magnets are used in BLDC rotors. Neodymium magnets can possess a strength grade from N35 to N52. The magnet grade as well as its thickness can offer parameters for adjusting PM strength.
@@ -76,7 +117,9 @@ The concept of flux linkage is commonly used to describe the interactions of the
 
 According to Faraday's Law, any change in flux linkage over time generates a _back-EMF._
 
-$E = -N \frac{d\phi}{dt}$
+$$
+E = -N \frac{d\phi}{dt}
+$$
 
 Where E is the induced back-EMF voltage (V), $\phi$ is the flux per coil (Wb, V*s or T*m^2).
 
@@ -101,12 +144,58 @@ Finally, we can establish a relation to the torque constant $K_t$:
 
 $K_e = K_t$ 
 
-*These numbers are actually the same when standardizing for units and for an _ideal case_, meaning no mechanical drag or magnetic saturation.
+*These numbers are actually the same when standardizing for units, what reference points are used for measurement (line-to-line or line-to-neutral for star configurations) and for an _ideal case_, meaning no mechanical drag or magnetic saturation. A more detailed derivation can be found in the Math folder in this repo.
 
 $\tau = K_t * I$, where $\tau$ is the torque (N*m), and I is the current (A).
 
-## Magnet Skew
+## Winding Factor
 
-## Statormaxxing
+Winding factor _Kw_ is dependent on three variables: 
+
+$$
+K_w = K_p * K_{skew} * K_d
+$$
+
+### 1. Pitch factor 
+
+The Pitch factor $K_p$ is always 1 in a concentrated winding (one coil per pole). In this calculator, distributed winding calculation is not included, although a more in-depth explanation of the difference can be found in the next module.
+
+### 2. Magnet skew 
+
+The skew constant $K_{skew}$ is an optional orientation parameter of the PM magnets on the rotor. This can be done to smooth out _cogging torque_. 
+
+<img src="https://github.com/user-attachments/assets/471a7abe-e580-4280-836c-eaf094b9c34c" width="48%"> 
+
+In electrical radians $\theta_{elec}$:
+
+$$
+K_{skew} = \frac{sin(\theta_{elec}/2)}{\theta_{elec}/2}
+$$
+
+$\theta_{elec}$ refer to the degree in the current phase cycle of the AC current. To convert this to mechanical radians, simply divide it by the number of **pole pairs,** which is the number of PM magnets / 2.
+
+### 3. Distribution Factor
+
+The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
+
+$$
+q = \frac{N_{slots}}{3*N_{poles}}
+$$
+
+Since electrical angle tracks back-EMF waveform, which spans a full N-S cycle of PM poles, the number of pole pairs $N_{poles}/2$ is used for $\gamma$:
+
+$$
+\gamma = 2\pi * \frac{N_{poles}}{2*N_{slots}}
+$$
+
+$$
+K_d = \frac{sin(\frac{\gamma * q}{2})}{\frac{\gamma*q}{2}}
+$$
+
+<hr width="30%">
+Thus, for a concentrated winding configuration with no skew, the winding factor $K_w$ is equal to the distribution factor $K_d$.
+
+
+
 
 
