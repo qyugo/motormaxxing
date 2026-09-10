@@ -2,7 +2,7 @@
 
 Reference sheet for variables used for derivations.
 
-$n_g$ : AWG gauge
+$n_g$ : Copper AWG gauge
 
 $n_s$ : Strand count
 
