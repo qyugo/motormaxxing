@@ -68,4 +68,12 @@ $\phi_{Pole}$ : Flux per pole (Wb)
 
 $A_{pole}$ : Pole area (mm^2)
 
+$B_r$ : Remanent flux density, dependent on NdFeB grade.
+
+$L_M$ : Magnet thickness (mm)
+
+$\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB magnets. Dimensionless, as it is the slope of the linear portion of a magnet's demagnetization curve.
+
+$g$ : Airgap length - the very small space between rotor and stator (mm)
+
 
