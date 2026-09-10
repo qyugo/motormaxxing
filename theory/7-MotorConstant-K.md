@@ -64,5 +64,6 @@ $$
 K_c = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
 $$
 
+The effect of the motor constant K is a simple scaling of KV, notable affecting the design parameter, **Turn Count.**
 
 
