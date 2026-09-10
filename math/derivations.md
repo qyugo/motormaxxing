@@ -300,6 +300,22 @@ $$
 
 As a default, Kp = Kskew = 1 for concentrated windings and no skew. 
 
+For a distributed winding (q>=1), The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
+
+$$
+q = \frac{N_{slots}}{3*N_{poles}}
+$$
+
+Since electrical angle tracks back-EMF waveform, which spans a full N-S cycle of PM poles, the number of pole pairs $N_{poles}/2$ is used for $\gamma$:
+
+$$
+\gamma = 2\pi * \frac{N_{poles}}{2*N_{slots}}
+$$
+
+$$
+K_w = K_d = \frac{sin(\frac{\gamma * q}{2})}{\frac{\gamma*q}{2}}
+$$
+
 ## 8. Motor Constant K
 
 The motor constant K can either be experimentally derived by measuring KV or analytically derived using mechanical and electrical properties. It is simply KV, in RPM/V multiplied by the number of turns.
