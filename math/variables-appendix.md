@@ -76,4 +76,6 @@ $\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB m
 
 $g$ : Airgap length - the very small space between rotor and stator (mm)
 
+$f$ : Fill factor of coil windings to available slot area
+
 
