@@ -49,3 +49,23 @@ $K_w$ : Winding factor
 $E$ : Back-EMF ($V$)
 
 $\omega$ : Angular velocity of the rotor ($rad/s$)
+
+$B_g$ : Airgap flux density (T)
+
+$r_{gap}$ : Radial gap, distance from the center of the motor to the middle of the air gap (mm)
+
+$K_w$ : Winding factor
+
+$N_{poles}$ : Number of poles
+
+$N_{TPP}$ : Teeth per phase
+
+$L_{stack}$ : Stack length or thickness of stator (mm)
+
+$C_{SD}$ : Multiplier, 1 for delta config or $\sqrt{3}$ for star.
+
+$\phi_{Pole}$ : Flux per pole (Wb)
+
+$A_{pole}$ : Pole area (mm^2)
+
+
