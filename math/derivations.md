@@ -2,7 +2,7 @@
 
 The following derivations explains the equations in each part of the Python code.
 
-Variables can be found [here](7-variables-appendix.md)
+Variables and unit references can be found [here](variables-appendix.md). 
 
 ## 1. AWG Wire Geometry
 
