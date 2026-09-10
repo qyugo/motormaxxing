@@ -292,7 +292,15 @@ $$
 
 The calculator, as a default, will trip for overfill at 42%, since a theoretical maximum of 50% of the slot space can be filled (in a double layer winding). However, more leeway will be necessary for hand-wound motors that may not perfectly minimize area taken up by copper.
 
-## 7. Kw and K Constant
+## 7. Winding Factor
+
+$$
+K_w = K_p * K_{skew} * K_d
+$$
+
+As a default, Kp = Kskew = 1 for concentrated windings and no skew. 
+
+## 8. Motor Constant K
 
 The motor constant K can either be experimentally derived by measuring KV or analytically derived using mechanical and electrical properties. It is simply KV, in RPM/V multiplied by the number of turns.
 
