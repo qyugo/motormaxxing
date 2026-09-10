@@ -40,11 +40,22 @@ $$
 
 Where $B_g$ can be estimated, or calculated using:
 
-$B_r$ : Remanent flux density, dependent on NdFeB grade.
+$B_r$ : Remanent flux density, dependent on NdFeB grade. Referring to the following table:
+
+| Magnet Grade | Br (T) |
+| --- | --- |
+| N35 | 1.17 – 1.22 |
+| N38 | 1.22 – 1.25 |
+| N40 | 1.25 – 1.28 |
+| N42 | 1.28 – 1.32 |
+| N45 | 1.32 – 1.38 |
+| N48 | 1.37 – 1.42 |
+| N50 | 1.40 – 1.45 |
+| N52 | 1.43 – 1.48 |
 
 $L_M$ : Magnet thickness (mm)
 
-$\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB magnets. Dimensionless, as it is the slope of the linear portion of a magnet's demagnetization curve.
+$\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB magnets. Dimensionless, as it is the slope of the linear portion of a magnet's demagnetization curve. Set as default 1.05 in the code.
 
 $g$ : Airgap length - the very small space between rotor and stator (mm)
 
