@@ -22,6 +22,8 @@ $MTL$ : Mean Turn Length ($mm$)
 
 $C_w$ : Winding buildup correction (mm)
 
+#f$ : Copper fill factor
+
 $\rho$ : Copper resistivity ($\ohm*m$)
 
 $KV$ : Speed constant of a motor ($RPM/V$)
@@ -329,24 +331,13 @@ $$
 Estimation of total available slot area will require some measurements of the gap at the top and the bottom between each stator tooth as well as the depth of each tooth, since slots will usually be of a trapezoidal shape. Measuring along the center of the tooth's depth and multiplying to the pitch may also provide a decent estimate. However, due to hand-winding imperfections and the size of the fillets on each tooth, this is meant to serve as a simple estimation. 
 
 $$
-A_{slot} = \frac{W_{slot, out} + W_{slot, in}{2} * r_{depth}
+A_{slot} = \frac{W_{slot, out} + W_{slot, in}}{2} * r_{depth}
 $$
 
 Fill factor:
+
 $$
 f = A_{wind} / A_{slot}
 $$
 
 The calculator, as a default, will trip for overfill at 42%, since a theoretical maximum of 50% of the slot space can be filled (in a double layer winding). However, more leeway will be necessary for hand-wound motors that may not perfectly minimize area taken up by copper.
-
-
-
-
-
-
-Source: 
-https://source-robotics.com/blogs/blog/motor-constants-kv-kt-ke-km-explained
-
-
-
-
