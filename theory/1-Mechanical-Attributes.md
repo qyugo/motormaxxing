@@ -75,7 +75,7 @@ Furthermore, fillets on the stator core, winding imperfections, and buildup leng
 Characterization Note:
 Motors can be characterized by size, and slot/pole configurations. For instance, a 36N42P motor with a 8110 stator core would have 36 teeth, 42 permanent magnet slots (always divisible by 2), with 21 pole pairs, a stator diameter of 81mm, and a stack length of 10mm.
 
-## Permanent Magnet Rotor Structure
+### Permanent Magnet Rotor Structure
 The structure of the PM rotor can influence motor characteristics such as torque output, flux linkage, and _cogging torque._ 
 
 ### Rotor Shell and Magnets
@@ -148,7 +148,7 @@ $K_e = K_t$
 
 $\tau = K_t * I$, where $\tau$ is the torque (N*m), and I is the current (A).
 
-## Winding Factor
+## 5. Winding Factor
 
 Winding factor _Kw_ is dependent on three variables: 
 
@@ -156,11 +156,11 @@ $$
 K_w = K_p * K_{skew} * K_d
 $$
 
-### 1. Pitch factor 
+### i. Pitch factor 
 
 The Pitch factor $K_p$ is always 1 in a concentrated winding (one coil per pole). In this calculator, distributed winding calculation is not included, although a more in-depth explanation of the difference can be found in the next module.
 
-### 2. Magnet skew 
+### ii. Magnet skew 
 
 The skew constant $K_{skew}$ is an optional orientation parameter of the PM magnets on the rotor. This can be done to smooth out _cogging torque_. 
 
@@ -174,9 +174,9 @@ $$
 
 $\theta_{elec}$ refer to the degree in the current phase cycle of the AC current. To convert this to mechanical radians, simply divide it by the number of **pole pairs,** which is the number of PM magnets / 2.
 
-### 3. Distribution Factor
+### iii. Distribution Factor
 
-The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
+For a distributed winding (q>=1), The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
 
 $$
 q = \frac{N_{slots}}{3*N_{poles}}
@@ -192,8 +192,13 @@ $$
 K_d = \frac{sin(\frac{\gamma * q}{2})}{\frac{\gamma*q}{2}}
 $$
 
-<hr width="30%">
 Thus, for a concentrated winding configuration with no skew, the winding factor $K_w$ is equal to the distribution factor $K_d$.
+
+For a 36N42P example,
+
+$$
+K_w \approx 0.9549.
+$$
 
 
 
