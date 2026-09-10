@@ -10,11 +10,17 @@ $n_s$ : Strand count
 
 $n_t$ : Turn count
 
-$d(n)$ : Strand diameter ($mm$)
+$d(n_g)$ : Strand diameter for gauge n ($mm$)
 
-$A(n)$ : Strand cross sectional area ($mm^2$)
+$A(n_g)$ : Strand cross sectional area ($mm^2$)
+
+$A_{wind}$ : Total winding area ($mm^2)
+
+$A_{slot}$ : Slot area on stator tooth ($mm^2$)
 
 $MTL$ : Mean Turn Length ($mm$)
+
+$C_w$ : Winding buildup correction (mm)
 
 $\rho$ : Copper resistivity ($\ohm*m$)
 
@@ -43,9 +49,6 @@ $K_w$ : Winding factor
 $E$ : Back-EMF ($V$)
 
 $\omega$ : Angular velocity of the rotor ($rad/s$)
-
-
-
 
 
 
@@ -97,6 +100,12 @@ $$
 R_{coil} = R_{per_{m}} * (n_t * \frac{MTL}{1000})
 $$
 
+Where MTL is calculated based on measured stator lamination width $w_{tooth}$ and stator stack length $L_{STACK}$, both in units of mm. A correction factor $C_w$ (mm) is added for buildup, in the form of extra length. This can be measured or inferred, but nevertheless tunable in the calculator, to see how it affects final calculations.
+
+$$
+MTL = 2 * (w_{tooth} + L_{stack}) + C_w
+$$
+
 ## 3. Turns, KV and Kt Relationship (For Star/Wye, 3-phase, sinusoidal)
 
 The K-constant is a function of turn count and motor KV, so it is independent of how many stator teeth/slots there are.
@@ -104,6 +113,8 @@ The K-constant is a function of turn count and motor KV, so it is independent of
 $$
 K_{const} = n_t * KV
 $$
+
+### i. KV to Ke
 
 Derivation of Kt from KV, an _ideal_ approximation for sine-commutated BLDC motors, and line-to-line KV:
 
@@ -130,6 +141,8 @@ $$
 $$
 \therefore K_{e, phase} = \frac{1}{KV_{line}} * \frac{2\pi}{60} * \frac{1}{\sqrt{3}}
 $$
+
+### ii. Power, Torque, Back-EMF, and Flux Linkage Relations
 
 We can then find the torque constant $K_t$ by summing the instantaneous power from three phases, offset 120 ° from each other in a 3-phase motor.
 
@@ -185,12 +198,14 @@ Since the above is always true, it implies the average value of each term is 1/2
 And for three phases,
 
 $$
-3 * \frac{1}/{2} = \frac{3}{2}.
+3 * \frac{1}{2} = \frac{3}{2}.
 $$
 
 $$
 E * I_{total} = E_{max} * I_{max} * \frac{3}{2}) = \tau*\omega = P_{Ideal}.
 $$
+
+### iii. Ke to Kt
 
 After all this, we can obtain a relation between $K_t$ and $K_e$ for a motor commutated by FOC:
 
@@ -226,7 +241,9 @@ $$
 \therefore  K_e * \frac{3}{2} = K_t.
 $$
 
-Plugging in K_e in terms of KV, utilizing the equivalence derived earlier, we can finally obtain a relation between $K_t$ and $KV$.
+### iv. KV to Kt
+
+Plugging in $K_e$ in terms of $KV$, utilizing the equivalence derived earlier, we can finally obtain a relation between $K_t$ and $KV$.
 
 $$
 K_t = \frac{3}{2} * \frac{1}{\sqrt{3}} * \frac{60}{2\pi} * \frac{1}{KV}
@@ -235,6 +252,95 @@ $$
 $$
 K_t = 8.27/KV
 $$
+
+## 4. Current Translation
+
+Here, derivations of current and resistance from various winding configurations as well as star/delta are provided.
+
+### i. Series vs. Parallel
+
+The term $R_{coil}$ refers to the resistance of a single coil, or one wound tooth (accounting for all $n_t$ turns completed, which is broken down in Section 2. Teeth per phase $n_{TPP}$ will be 1/3 of the total stator teeth for a double layer winding.
+
+For **series windings**: 
+
+$$
+I_{phase} = I_{coil}
+$$
+
+$$
+R_{phase} = n_{TPP} * R_{coil}
+$$
+
+For **parallel windings**:
+
+$$
+I_{phase} = I_{coil} * n_{TPP}
+$$
+
+$$
+R_{phase} = R_{coil} / n_{TPP}
+$$
+
+A cross-check is performed using the Joule's law, $I_{phase}^2*R_{phase}$ for calculating power loss in each phase:
+
+Series: $P_{loss} = I_{coil}^2 * n_{TPP} * R_{coil}$
+
+Parallel: $P_{loss} = I_{coil}^2 * n_{TPP}^2 * \frac{R_coil}{n_{TPP}} = I_{coil}^2 * n_{TPP} * R_{coil}$
+
+The copper loss is effectively the same for both configurations.
+
+### ii. Delta vs. Wye
+
+For **Star / Wye** configuration:
+
+$$
+V_{line} = V_{phase} * \sqrt{3}
+$$
+
+$$
+I_{line} = I_{phase}
+$$
+
+For **Delta** configuration:
+
+$$
+V_{line} = V_{phase}
+$$
+
+$$
+I_{line} = I_{phase} * \sqrt{3}
+$$
+
+As mentioned prior, a delta configuration would have a different KV factor:
+
+$$
+KV_{delta} = KV_{star} * \sqrt{3}
+$$
+
+## 6. Slot Fill
+
+Here, the tangibility of $n_t$ turns of a coil with $n_s$ strands with certain AWG $n_g$ is weighed in regards to stator tooth size.
+
+Total winding area:
+$$
+A_{wind} = n_s * n_t * A(n_g)
+$$
+
+Estimation of total available slot area will require some measurements of the gap at the top and the bottom between each stator tooth as well as the depth of each tooth, since slots will usually be of a trapezoidal shape. Measuring along the center of the tooth's depth and multiplying to the pitch may also provide a decent estimate. However, due to hand-winding imperfections and the size of the fillets on each tooth, this is meant to serve as a simple estimation. 
+
+$$
+A_{slot} = \frac{W_{slot, out} + W_{slot, in}{2} * r_{depth}
+$$
+
+Fill factor:
+$$
+f = A_{wind} / A_{slot}
+$$
+
+The calculator, as a default, will trip for overfill at 42%, since a theoretical maximum of 50% of the slot space can be filled (in a double layer winding). However, more leeway will be necessary for hand-wound motors that may not perfectly minimize area taken up by copper.
+
+
+
 
 
 
