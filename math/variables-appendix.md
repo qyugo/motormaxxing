@@ -80,6 +80,8 @@ $r_{gap}$ : Radial gap, distance from the center of the motor to the middle of t
 
 $\rho$ : Copper resistivity ($\ohm*m$)
 
+$T$ : Motor operating temperature ($^{\circ}C$)
+
 $\tau$ : Torque ($N*m$)
 
 $\theta$ : Rotor angle ($rad$)
