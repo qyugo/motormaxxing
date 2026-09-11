@@ -8,6 +8,8 @@ $A_{wind}$ : Total winding area ($mm^2$)
 
 $A_{slot}$ : Slot area on stator tooth ($mm^2$)
 
+$A_{total}$ : Effective total copper cross-section area for multiple strands of a certain AWG ($mm^2$)
+
 $A_{pole}$ : Effective pole span area (mm^2)
 
 $B$ : Magnetic flux density ($T$, or $Wb/m^2$)
