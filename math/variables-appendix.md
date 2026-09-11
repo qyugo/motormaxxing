@@ -2,6 +2,8 @@
 
 Reference sheet for variables used for derivations.
 
+$\alpha$ : Temperature coefficient of resistance ($1/^{\circ}C$)
+
 $A(n_g)$ : Strand cross sectional area ($mm^2$)
 
 $A_{wind}$ : Total winding area ($mm^2$)
@@ -28,13 +30,29 @@ $\frac{d\lambda}{d\theta}$ : Change in flux linkage with rotor angle ($Wb/rad$)
 
 $E$ : Back-EMF ($V$)
 
+$E_{max}$ : Peak back-EMF ($V$)
+
 $f$ : Copper fill factor to available slot area
 
-$I_{phase}$ : Phase current ($A$)
+$I_{coil}$ : Coil current ($A$), ($I_{coil} = I_{phase}$ in series, $I_{coil} = \frac{I_{phase}}{N_{TPP}}$ for parallel)
+
+$I_{line}$ : Line-to-line current ($A$) 
+
+$I_{phase}$ : Phase current, measured line-to-neutral ($A$)
+
+$I_max$ : Peak current ($A$)
+
+$I_{total}$ : Combined sum of phase currents ($A$)
 
 $K_c$ : Proportional motor constant, for scaling KV.
 
 $K_e$ : Motor b-EMF constant ($V/rad/s$)
+
+$K_d$ : Distribution factor
+
+$K_p$ : Pitch factor for distributed windings (=1 for concentrated)
+
+$K_{skew} : Skew factor for PM magnets
 
 $K_t$ : Motor torque constant ($N*m/A$)
 
@@ -66,6 +84,8 @@ $N_{TPP}$ : Teeth per phase
 
 $\omega$ : Angular velocity of the rotor ($rad/s$)
 
+$P$ : Power ($W$)
+
 $\phi$ : Magnetic flux ($Wb$, or $V*s$)
 
 $\phi_{Pole}$ : Flux per pole (Wb)
@@ -74,7 +94,9 @@ $R_{per_m}$ : Resistance per meter ($\ohm/m$)
 
 $R_{coil}$ : Coil resistance ($\ohm$)
 
-$R_{phase}$ : Phase Resistance ($\ohm$)
+$R_{line}$ : Line-to-line resistance ($\ohm$) ($R_{line} = 2*R_{phase}$ for star, $R_{line} = \frac{2}{3} * R_{phase}$ for delta)
+
+$R_{phase}$ : Phase Resistance, or line-to-neutral ($\ohm$)
 
 $r_{gap}$ : Radial gap, distance from the center of the motor to the middle of the air gap (mm)
 
@@ -85,6 +107,10 @@ $T$ : Motor operating temperature ($^{\circ}C$)
 $\tau$ : Torque ($N*m$)
 
 $\theta$ : Rotor angle ($rad$)
+
+$V_{line}$ : Line-to-line voltage ($V$) ($V_{line} = \sqrt{3}*V_{phase}$ for star, $V_{line} = V_{phase}$ for delta)
+
+$V_{phase}$ : Line-to-neutral voltage, also known as phase voltage ($V$)
 
 
 
