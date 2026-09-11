@@ -48,7 +48,9 @@ $I_max$ : Peak current ($A$)
 
 $I_{total}$ : Combined sum of phase currents ($A$)
 
-$K_c$ : Proportional motor constant, for scaling KV.
+$K$ : Proportional motor constant, for scaling KV.
+
+$K_c$ : Carter's coefficient, a multiplier for increasing effective air gap length
 
 $K_e$ : Motor b-EMF constant ($V/rad/s$)
 
