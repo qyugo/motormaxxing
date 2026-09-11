@@ -30,23 +30,6 @@ $f$ : Copper fill factor to available slot area
 
 $I_{phase}$ : Phase current ($A$)
 
-$n_g$ : Copper AWG gauge
-
-$n_s$ : Strand count
-
-$n_t$ : Turn count
-
-$N_{poles}$ : Number of poles
-
-$N_{TPP}$ : Teeth per phase
-
-
-
-$MTL$ : Mean Turn Length ($mm$)
-
-
-
-
 $K_c$ : Proportional motor constant, for scaling KV.
 
 $K_e$ : Motor b-EMF constant ($V/rad/s$)
@@ -65,7 +48,19 @@ $L_M$ : Magnet thickness (mm)
 
 $\lambda$ : Flux linkage ($Wb$)
 
+$MTL$ : Mean Turn Length ($mm$)
+
 $\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB magnets. Dimensionless, as it is the slope of the linear portion of a magnet's demagnetization curve.
+
+$n_g$ : Copper AWG gauge
+
+$n_s$ : Strand count
+
+$n_t$ : Turn count
+
+$N_{poles}$ : Number of poles
+
+$N_{TPP}$ : Teeth per phase
 
 $\omega$ : Angular velocity of the rotor ($rad/s$)
 
