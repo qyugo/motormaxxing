@@ -84,7 +84,7 @@ The above expression is for _line-to-line_ characteristics, since KV is often me
 
 However, these equations assume $K_e$ from _star-to-phase_ characteristics, so the value must be converted for subsequent calculations.
 
-For a star winding, the line voltage and the phase voltage vary by a factor of $\sqrt{3} as per the characteristics of tying the phases together at a neutral point:
+For a star winding, the line voltage and the phase voltage vary by a factor of $\sqrt{3}$ as per the characteristics of tying the phases together at a neutral point:
 
 $$
 V_{phase} = V_{line} / \sqrt{3} 
@@ -145,6 +145,7 @@ Finally, we can obtain the average value of %cos^2(\theta) over one period. You 
 $$
 cos^2(\theta) + sin^2(\theta) = 1
 $$
+
 Since the above is always true, it implies the average value of each term is 1/2.
 
 And for three phases,
@@ -154,7 +155,11 @@ $$
 $$
 
 $$
-E * I_{total} = E_{max} * I_{max} * \frac{3}{2}) = \tau*\omega = P_{Ideal}.
+I_{total} = \frac{3}{2} * I_{max}
+$$
+
+$$
+E * I_{total} = E_{max} * I_{max} * \frac{3}{2} = \tau*\omega = P_{Ideal}.
 $$
 
 ### iii. Ke to Kt
@@ -170,7 +175,7 @@ $$
 Plugging this in for $E_{max}$ from the previous energy balance equation but for all three phases (equating power to power, using $E, I, \tau, \omega$):
 
 $$
-P_{total} = E_{max} * I_{max} * \frac{3}{2}) = \tau*\omega
+P_{total} = E_{max} * I_{max} * \frac{3}{2} = \tau*\omega
 $$
 
 $$
@@ -237,7 +242,7 @@ A cross-check is performed using the Joule's law, $I_{phase}^2*R_{phase}$ for ca
 
 Series: $P_{loss} = I_{coil}^2 * n_{TPP} * R_{coil}$
 
-Parallel: $P_{loss} = I_{coil}^2 * n_{TPP}^2 * \frac{R_coil}{n_{TPP}} = I_{coil}^2 * n_{TPP} * R_{coil}$
+Parallel: $P_{loss} = I_{coil}^2 * n_{TPP}^2 * \frac{R_{coil}}{n_{TPP}} = I_{coil}^2 * n_{TPP} * R_{coil}$
 
 The copper loss is effectively the same for both configurations.
 
@@ -274,6 +279,7 @@ $$
 Here, the tangibility of $n_t$ turns of a coil with $n_s$ strands with certain AWG $n_g$ is weighed in regards to stator tooth size.
 
 Total winding area:
+
 $$
 A_{wind} = n_s * n_t * A(n_g)
 $$
