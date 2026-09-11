@@ -16,9 +16,9 @@ $A_{pole}$ : Effective pole span area (mm^2)
 
 $B$ : Magnetic flux density ($T$, or $Wb/m^2$)
 
-$B_r$ : Remanent flux density, dependent on NdFeB grade.
+$B_r$ : Remanent flux density, dependent on NdFeB grade. ($T$ or $Wb/m^2$)
 
-$B_g$ : Airgap flux density (T)
+$B_g$ : Airgap flux density ($T$ or $Wb/m^2$)
 
 $C_{SD}$ : Multiplier, 1 for delta config or $\sqrt{3}$ for star.
 
@@ -33,6 +33,10 @@ $E$ : Back-EMF ($V$)
 $E_{max}$ : Peak back-EMF ($V$)
 
 $f$ : Copper fill factor to available slot area
+
+$g$ : Airgap length - the very small space between rotor and stator (mm)
+
+$\gamma$ : Electrical angle between two slots (rad)
 
 $I_{coil}$ : Coil current ($A$), ($I_{coil} = I_{phase}$ in series, $I_{coil} = \frac{I_{phase}}{N_{TPP}}$ for parallel)
 
@@ -52,7 +56,7 @@ $K_d$ : Distribution factor
 
 $K_p$ : Pitch factor for distributed windings (=1 for concentrated)
 
-$K_{skew} : Skew factor for PM magnets
+$K_{skew}$ : Skew factor for PM magnets
 
 $K_t$ : Motor torque constant ($N*m/A$)
 
@@ -60,17 +64,15 @@ $KV$ : Speed constant of a motor ($RPM/V$)
 
 $K_w$ : Winding factor
 
-$L_g$ : Airgap length - the very small space between rotor and stator (mm)
-
 $L_{stack}$ : Stack length or thickness of stator (mm)
 
 $L_M$ : Magnet thickness (mm)
 
-$\lambda$ : Flux linkage ($Wb$)
+$\lambda$ : Flux linkage, function of Kw and flux ($Wb$)
 
 $MTL$ : Mean Turn Length ($mm$)
 
-$\mu_r$ : Magnetic recoil permeability, generally close to 1.01-1.15 for NdFeB magnets. Dimensionless, as it is the slope of the linear portion of a magnet's demagnetization curve.
+$\mu_r$ : Magnetic recoil permeability, ($\approx1.05$ for NdFeB magnets). Dimensionless slope of the linear portion of the demagnetization curve.
 
 $n_g$ : Copper AWG gauge
 
@@ -90,6 +92,8 @@ $\phi$ : Magnetic flux ($Wb$, or $V*s$)
 
 $\phi_{Pole}$ : Flux per pole (Wb)
 
+$q$ : Slots per pole per phase
+
 $R_{per_m}$ : Resistance per meter ($\ohm/m$)
 
 $R_{coil}$ : Coil resistance ($\ohm$)
@@ -107,6 +111,8 @@ $T$ : Motor operating temperature ($^{\circ}C$)
 $\tau$ : Torque ($N*m$)
 
 $\theta$ : Rotor angle ($rad$)
+
+$\theta_{elec}$ : Electrical angle ($rad$)
 
 $V_{line}$ : Line-to-line voltage ($V$) ($V_{line} = \sqrt{3}*V_{phase}$ for star, $V_{line} = V_{phase}$ for delta)
 
