@@ -4,9 +4,9 @@ The motor constant K can either be experimentally derived by measuring KV or ana
 
 It is simply KV, in RPM/V multiplied by the number of turns.
 
-$K_C =$ turns * KV
+$K =$ turns * KV
 
-K_c itself is a function of both mechanical attributes and electrical attributes:
+K itself is a function of both mechanical attributes and electrical attributes:
 
 $B_g$ : Airgap flux density (T)
 
@@ -27,7 +27,7 @@ $\phi_{Pole}$ : Flux per pole (Wb)
 $A_{pole}$ : Pole area (mm^2)
 
 $$
-K_c = \frac{60/2\pi}{C_{SD} * N_{TPP} * K_w * (N_{poles}/2) * \phi_{Pole}}
+K = \frac{60/2\pi}{C_{SD} * N_{TPP} * K_w * (N_{poles}/2) * \phi_{Pole}}
 $$
 
 $$
@@ -68,13 +68,49 @@ For fun, the entire analytical equation for $K_c$ using all inputted variables i
 Star:
 
 $$
-K_c = \frac{60/2\pi}{\sqrt{3} * N_{TPP} * K_w * (N_{poles}/2) * \frac{B_r * L_M}{L_M + (\mu_r*g)} * (\frac{2\pi * r_{gap} * L_{stack}}{N_{poles}})}
+K = \frac{60/2\pi}{\sqrt{3} * N_{TPP} * K_w * (N_{poles}/2) * \frac{B_r * L_M}{L_M + (\mu_r*g)} * (\frac{2\pi * r_{gap} * L_{stack}}{N_{poles}})}
 $$
 
 $$
-K_c = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
+K = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
 $$
 
 The effect of the motor constant K is a simple scaling of KV, notable affecting the design parameter, **Turn Count.**
 
+## Carter's Coefficient K_c (Correction for airgap -> K)
 
+Yes, that's right, another K. When analytically calculating values such as airgap flux, it is necessary to account for the leakage flux, iron saturation, and slot-opening correction (K_c).
+
+Without this, the equations noteably for $B_g$ assume a smooth gap between the rotor and the stator, resulting in much higher KV and torque values than in reality. Carter's coefficient addresses the unevenness of the air gap due to the presence of slots, which in creases _magnetic reluctance._
+
+$K_c$ is a scaling factor for airgap length $g$, giving us an effective airgap length $g'$:
+
+$$
+g' = K_c * g
+$$
+
+Where $K_c >= 1$.
+
+The formula for $K_c$ depends on the slot pitch $t_s$ (which is a function of diameter D and number of slots $n_{slots}$, the width of each slot opening $w_s$, and the airgap $g$.
+
+$$
+t_s = \frac{\pi*D}{n_{slots}}
+$$
+
+$$
+K_c = \frac{t_s}{t_s - \sigma*w_s}
+$$
+
+Where $\sigma$ is a function of the slot width to airgap ratio:
+
+$$
+\sigma = \frac{w_s/g}{5+ (w_s/g)}
+$$
+
+This is to be calculated for both the stator ($K_{CS}$) and the rotor ($K_{CR}$) since both contain slots. 
+
+Finally, the effective airgap g':
+
+$$
+g' = g * K_CS * K_{CR}
+$$
