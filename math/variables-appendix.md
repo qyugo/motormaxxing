@@ -68,6 +68,12 @@ $\phi$ : Magnetic flux ($Wb$, or $V*s$)
 
 $\phi_{Pole}$ : Flux per pole (Wb)
 
+$R_{per_m}$ : Resistance per meter ($\ohm/m$)
+
+$R_{coil}$ : Coil resistance ($\ohm$)
+
+$R_{phase}$ : Phase Resistance ($\ohm$)
+
 $r_{gap}$ : Radial gap, distance from the center of the motor to the middle of the air gap (mm)
 
 $\rho$ : Copper resistivity ($\ohm*m$)
