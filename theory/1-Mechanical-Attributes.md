@@ -41,7 +41,7 @@ Stators can either be the outer component (inrunner BLDC), or the inner componen
 <img src="https://github.com/user-attachments/assets/45c5c600-b48c-4a15-9497-49da97b87930" width="45%"> 
 <img src="https://github.com/user-attachments/assets/299bd69b-f38a-42b5-8c1b-0221c37277d2" width="41%"> 
 
-
+### Laminations and Eddy Current
 
 Eddy current is a current loop that occurs within a piece of conductive material as a moving magnetic field, such as that of a spinning motor, is introduced in its vicinity. 
 
