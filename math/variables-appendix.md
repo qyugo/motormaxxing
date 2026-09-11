@@ -102,7 +102,7 @@ $R_{line}$ : Line-to-line resistance ($\ohm$) ($R_{line} = 2*R_{phase}$ for star
 
 $R_{phase}$ : Phase Resistance, or line-to-neutral ($\ohm$)
 
-$r_{gap}$ : Radial gap, distance from the center of the motor to the middle of the air gap (mm)
+$r_{gap}$ : Radial moment arm of the motor, distance from the center of the motor to the middle of the air gap (mm)
 
 $\rho$ : Copper resistivity ($\ohm*m$)
 
