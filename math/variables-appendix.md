@@ -4,7 +4,7 @@ Reference sheet for variables used for derivations.
 
 $A(n_g)$ : Strand cross sectional area ($mm^2$)
 
-$A_{wind}$ : Total winding area ($mm^2)
+$A_{wind}$ : Total winding area ($mm^2$)
 
 $A_{slot}$ : Slot area on stator tooth ($mm^2$)
 
