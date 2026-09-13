@@ -1,9 +1,10 @@
 # Correction Constants
+
 Finally, some constants are required to correct for KV scaling in the analytical model, including but not limited to the motor constant K, Carter's coefficient $K_c$, and corrections to flux due to slot leakage.
 
 As such with everything in this repo, experimental runs are most reliable for determining a scaling factor, but an analytical model can provide a decent enough starting point.
 
-## 1. Motor Constant K
+## 1. Motor Proportional Constant K
 
 The motor constant K can either be experimentally derived by measuring KV or analytically derived using mechanical and electrical properties.
 
@@ -82,7 +83,7 @@ $$
 
 The effect of the motor constant K is a simple scaling of KV, notable affecting the design parameter, **Turn Count.**
 
-## Carter's Coefficient K_c (Correction for airgap -> K)
+## 2. Carter's Coefficient K_c (Correction for airgap -> K)
 
 Yes, that's right, another K. When analytically calculating values such as airgap flux, it is necessary to account for the leakage flux, iron saturation, and slot-opening correction (K_c).
 
@@ -119,3 +120,18 @@ Finally, the effective airgap g':
 $$
 g' = g * K_{CS} * K_{CR}
 $$
+
+## 3. Airgap Flux Correction
+
+The airgap will experience a correction factor depending on the gap of the rotor magnets.
+
+Additionally, a leakage factor
+
+## 4. Temperature Derating
+
+The flux from a permanent magnet will decrease with an increasing temperature. Thus, a derating of $B_r$ will be applied depending on the estimate operating temperature. Neodymium will decrease in its temperature coefficient of resistance $\alpha$ for about -0.0012 / $^{\circ}C$. 
+
+An option for default temperature is set at 75$^{\circ}C$. Therefore, the previous value of Br will be adjusted.
+
+## 5. Back-Iron (Rotor Material)
+As mentioned previously, flux will be improved if the rotor is of a ferromagnetic material with low permeability, compared to, let's say a 3D-printed rotor with a permeability of 1 (effectively the same as air). 
