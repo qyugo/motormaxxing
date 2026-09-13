@@ -1,4 +1,9 @@
-# Motor Constant K
+# Correction Constants
+Finally, some constants are required to correct for KV scaling in the analytical model, including but not limited to the motor constant K, Carter's coefficient $K_c$, and corrections to flux due to slot leakage.
+
+As such with everything in this repo, experimental runs are most reliable for determining a scaling factor, but an analytical model can provide a decent enough starting point.
+
+## 1. Motor Constant K
 
 The motor constant K can either be experimentally derived by measuring KV or analytically derived using mechanical and electrical properties.
 
