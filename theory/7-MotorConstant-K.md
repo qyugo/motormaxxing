@@ -112,5 +112,5 @@ This is to be calculated for both the stator ($K_{CS}$) and the rotor ($K_{CR}$)
 Finally, the effective airgap g':
 
 $$
-g' = g * K_CS * K_{CR}
+g' = g * K_{CS} * K_{CR}
 $$
