@@ -131,7 +131,7 @@ Additionally, a leakage factor
 
 The flux from a permanent magnet will decrease with an increasing temperature. Thus, a derating of $B_r$ will be applied depending on the estimate operating temperature. Neodymium will decrease in its temperature coefficient of resistance $\alpha$ for about -0.0012 / $^{\circ}C$. 
 
-An option for default temperature is set at 75$^{\circ}C$. Therefore, the previous value of Br will be adjusted.
+An option for default temperature is set at 75 $^{\circ}C$. Therefore, the previous value of Br will be adjusted.
 
 ## 5. Back-Iron (Rotor Material)
 As mentioned previously, flux will be improved if the rotor is of a ferromagnetic material with low permeability, compared to, let's say a 3D-printed rotor with a permeability of 1 (effectively the same as air). 
