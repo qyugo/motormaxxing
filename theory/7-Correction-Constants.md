@@ -121,17 +121,32 @@ $$
 g' = g * K_{CS} * K_{CR}
 $$
 
-## 3. Airgap Flux Correction
+## 3. Leakage Factor $K_\sigma$
 
-The airgap will experience a correction factor depending on the gap of the rotor magnets.
+Additionally some flux will be inevitably lost between adjacent rotor magnet (poles), effectively not making it across the airgap to the winding.
 
-Additionally, a leakage factor
+This is expressed as the leakage factor $k_\sigma$, and is applied in conjunction with the Carter coefficients to account for rotor slot leakage. Typically this is between 0.85-0.95, and an analytical model is not provided, so an adjustable slider is provided in the calculator.
 
-## 4. Temperature Derating
+## 4. Pole Arc Correction
+Further, there are losses due to magnets not covering the entire proportional "pizza slice" that the previous A_{pole} formula did not account for. 
+
+$$
+\phi_{pole, corrected} = \alpha_i * B_g * A_{pole}
+$$
+
+$$
+\alpha_i = \frac{1-w_{s, rotor}}{t_{s,rotor}}
+$$
+
+Where $w_{s, rotor}$ is the slot width of the rotor, and ${t_s,rotor}$ is the pole pitch, similarly used in determining Carter coefficients.
+
+## 5. Temperature Remanence Derating
 
 The flux from a permanent magnet will decrease with an increasing temperature. Thus, a derating of $B_r$ will be applied depending on the estimate operating temperature. Neodymium will decrease in its temperature coefficient of resistance $\alpha$ for about -0.0012 / $^{\circ}C$. 
 
 An option for default temperature is set at 75 $^{\circ}C$. Therefore, the previous value of Br will be adjusted.
 
-## 5. Back-Iron (Rotor Material)
+## 6. Back-Iron (Rotor Material)
 As mentioned previously, flux will be improved if the rotor is of a ferromagnetic material with low permeability, compared to, let's say a 3D-printed rotor with a permeability of 1 (effectively the same as air). 
+
+For a metal rotor, the permeability $\mu_r$ can be up to 2000-5000, however most of its effects plateau after a 1500-2000 range. This relates back to the enhancement of magnetic flux with an impermeable "back-iron," which permits better performance in steel rotor cans or brushed motors with a flux ring.
