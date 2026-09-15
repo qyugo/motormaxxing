@@ -1,3 +1,6 @@
+## Instructions for Python Calculator
+
+
 Run the following in terminal:
  
     python winding_calculator_gui.py
@@ -9,8 +12,6 @@ If error, a GUI toolkit may be needed:
 (some Linux distros: sudo apt install python3-tk)
  
 Equations and UI are contained in one file.
-
-## Instructions
 
 ### 1. Stator Construction
 
