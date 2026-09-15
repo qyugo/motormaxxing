@@ -144,15 +144,15 @@ def build_slider_group(specs, x, top_y, step, height, width=SLIDER_W):
 
 # WINDING BOX
 WINDING_SPECS = [
-    ("awg", "awg", 18, 32, 26, 0.5),
-    ("turns", "turns", 5, 15, 9, 1),
-    ("strands", "strands", 1, 40, 5, 1),
-    ("buildup_mm", "buildup", 0, 10, 8.0, 0.1),
-    ("pitch_factor", "kp", 0.5, 1.0, 1.0, 0.001),
-    ("skew_factor", "ksk", 0.5, 1.0, 1.0, 0.001),
-    ("kw", "kd", 0.5, 1.0, 0.933, 0.001),
+    ("awg", "AWG", 18, 32, 26, 0.5),
+    ("turns", "Turns / tooth", 5, 15, 9, 1),
+    ("strands", "Strands / bundle", 1, 40, 5, 1),
+    ("buildup_mm", "Buildup (mm)", 0, 10, 8.0, 0.1),
+    ("pitch_factor", "Kp", 0.5, 1.0, 1.0, 0.001),
+    ("skew_factor", "Ksk", 0.5, 1.0, 1.0, 0.001),
+    ("kw", "Kd", 0.5, 1.0, 0.933, 0.001),
 ]
-WINDING_X = 0.40
+WINDING_X = 0.42
 WINDING_TOP_Y = 0.813
 WINDING_STEP = 0.02
 WINDING_H = 0.017
@@ -233,9 +233,9 @@ ROTOR_H = 0.014
 ROTOR_GRADE_Y = ROTOR_PANEL_TOP - 0.045    
 ROTOR_TOP_Y = ROTOR_GRADE_Y - ROTOR_STEP  
 
-ax_grade = fig.add_axes([ROTOR_X, ROTOR_GRADE_Y-0.01, SLIDER_W, ROTOR_H])
+ax_grade = fig.add_axes([ROTOR_X + 0.03, ROTOR_GRADE_Y-0.01, SLIDER_W, ROTOR_H])
 ax_grade.set_facecolor(SLIDER_TRACK)
-grade_slider = Slider(ax_grade, "grade", 0, len(GRADE_LIST) - 1, valinit=3, valstep=1, color=ACCENT)
+grade_slider = Slider(ax_grade, "NdFeB Grade", 0, len(GRADE_LIST) - 1, valinit=3, valstep=1, color=ACCENT)
 grade_slider.label.set_color(TEXT)
 grade_slider.label.set_fontsize(FS_LABEL)
 grade_slider.valtext.set_color(TEXT)
@@ -243,14 +243,14 @@ grade_slider.valtext.set_fontsize(FS_LABEL)
 grade_slider.valtext.set_text(GRADE_LIST[3])
 
 ROTOR_SPECS = [
-    ("Lm", "L_M (mm)", 1.0, 6.0, 2.5, 0.1),
-    ("magnet_width", "mag width", 1.0, 10.0, 4.6, 0.1),
-    ("mu_r", "mu_r (mag)", 0.9, 1.3, 1.05, 0.01),
-    ("t_ring", "ring thick", 0.5, 10.0, 2.0, 0.1),
-    ("g", "d_gap (mm)", 0.1, 2.0, 0.65, 0.05),
+    ("Lm", "Magnet thickness", 1.0, 6.0, 2.5, 0.1),
+    ("magnet_width", "Magnet width", 1.0, 10.0, 4.6, 0.1),
+    ("mu_r", "Mag permeability", 0.9, 1.3, 1.05, 0.01),
+    ("t_ring", "Ring thickness", 0.5, 10.0, 2.0, 0.1),
+    ("g", "Airgap length", 0.1, 2.0, 0.65, 0.05),
 ]
 print(ROTOR_TOP_Y)
-magnet_sliders = build_slider_group(ROTOR_SPECS, ROTOR_X, 0.595, ROTOR_STEP, ROTOR_H)
+magnet_sliders = build_slider_group(ROTOR_SPECS, ROTOR_X + 0.03, 0.595, ROTOR_STEP, ROTOR_H)
 
 #print(ROTOR_X)
 ax_ring_mat = fig.add_axes([0.45, 0.6, 0.08, 0.0455])
@@ -301,11 +301,11 @@ iterm_box.text_disp.set_color(TEXT)
 
 # Correction Factors
 CORRECTIONS_SPECS = [
-    ("op_temp", "temp (C)", 20.0, 150.0, 75.0, 1.0),
-    ("k_sigma", "k_sigma (leak)", 0.70, 1.0, 0.90, 0.001),
-    ("k_const", "K_emp", 500, 1500, 900, 10),
+    ("op_temp", "Op. temp. (C)", 20.0, 150.0, 75.0, 1.0),
+    ("k_sigma", "k_sigma (leakage)", 0.70, 1.0, 0.90, 0.001),
+    ("k_const", "K (empirical)", 500, 1500, 900, 10),
 ]
-CORRECTIONS_X = 0.405
+CORRECTIONS_X = 0.425
 CORRECTIONS_TOP_Y = 0.57
 CORRECTIONS_STEP = 0.025
 CORRECTIONS_H = 0.017
