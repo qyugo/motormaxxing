@@ -146,7 +146,19 @@ The flux from a permanent magnet will decrease with an increasing temperature. T
 
 An option for default temperature is set at 75 $^{\circ}C$. Therefore, the previous value of Br will be adjusted.
 
+$$
+B_r(T) = B_{r, 20C} * (1 + \alpha * (T - 20))
+$$
+
 ## 6. Back-Iron (Rotor Material)
 As mentioned previously, flux will be improved if the rotor is of a ferromagnetic material with low permeability, compared to, let's say a 3D-printed rotor with a permeability of 1 (effectively the same as air). 
 
-For a metal rotor, the permeability $\mu_r$ can be up to 2000-5000, however most of its effects plateau after a 1500-2000 range. This relates back to the enhancement of magnetic flux with an impermeable "back-iron," which permits better performance in steel rotor cans or brushed motors with a flux ring.
+For a metal rotor, the permeability $\mu_{r, rotor}$ can be up to 2000-5000, however most of its effects plateau after a 1500-2000 range. This relates back to the enhancement of magnetic flux with an high-permeability "back-iron," which permits better performance in steel rotor cans or brushed motors with a flux ring.
+
+In practice, this will affect the value of $B_g$:
+
+$$
+B_g = \frac{B_r * L_m}{g' + \frac{t_{rotor}}{\mu_{r, rotor}} + \frac{t_{stator}}{\mu_{r,stator}} }
+$$
+
+Where $t_{rotor}$ is the rotor thickness, and $\mu_{r, rotor}$ is the rotor permeability. Default >2000 stator permeability $\mu_{r,stator}$ is assumed for silicon steel.
