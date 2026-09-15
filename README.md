@@ -19,11 +19,15 @@ Outputs:
 <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="75%"> 
 
 
-**2. Example Crafting of 36N42P BLDC Outrunner Motor**
+## 2. Example Crafting of 36N42P BLDC Outrunner Motor
 
-An application of the winding and construction calculators for a 8110 stator, wired for 36N42P in star configuration for a high-torque robotic actuator.
+An application of the winding and construction calculators for a hand-wound 8110 stator and FDM printed stator, wired for 36N42P in star configuration for a high-torque robotic actuator.
 
-**3. Motor Characterization (In Progress)**
+<img src="https://github.com/user-attachments/assets/723905bd-2630-4893-95b4-50d02e611639" width="35%"> 
+
+<img src="https://github.com/user-attachments/assets/f86a411e-1f80-47ba-9de4-a4d2a9937460" width="39%"> 
+
+## 3. Motor Characterization (In Progress)
 
 For testing and validating motor characteristics.
 
