@@ -326,12 +326,12 @@ $$
 
 The motor constant K can either be experimentally derived by measuring KV or analytically derived using mechanical and electrical properties. It is simply KV, in RPM/V multiplied by the number of turns.
 
-$K_C =$ turns * KV
+$K =$ turns * KV
 
-K_c itself is a function of both mechanical attributes and electrical attributes:
+K itself is a function of both mechanical attributes and electrical attributes:
 
 $$
-K_c = \frac{60/2\pi}{C_{SD} * N_{TPP} * K_w * (N_{poles}/2) * \phi_{Pole}}
+K = \frac{60/2\pi}{C_{SD} * N_{TPP} * K_w * (N_{poles}/2) * \phi_{Pole}}
 $$
 
 $$
@@ -353,11 +353,11 @@ The simplified analytical equation for $K_c$ using all inputted variables is:
 Star:
 
 $$
-K_c = \frac{60/2\pi}{\sqrt{3} * N_{TPP} * K_w * (N_{poles}/2) * \frac{B_r * L_M}{L_M + (\mu_r*g)} * (\frac{2\pi * r_{gap} * L_{stack}}{N_{poles}})}
+K = \frac{60/2\pi}{\sqrt{3} * N_{TPP} * K_w * (N_{poles}/2) * \frac{B_r * L_M}{L_M + (\mu_r*g)} * (\frac{2\pi * r_{gap} * L_{stack}}{N_{poles}})}
 $$
 
 $$
-K_c = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
+K = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
 $$
 
 
