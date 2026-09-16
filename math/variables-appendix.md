@@ -1,8 +1,14 @@
 # Appendix
 
-Reference sheet for variables used for derivations.
+Reference sheet for variables used for derivations, found [here](derivations.md). 
+
+$a_{chord}$ : Chording angle (electrical rad)
+
+$a_{skew}$ : Skew angle (electrical rad)
 
 $\alpha$ : Temperature coefficient of resistance ($1/^{\circ}C$)
+
+$\alpha_i$ : Pole arc coefficient
 
 $A(n_g)$ : Strand cross sectional area ($mm^2$)
 
@@ -14,6 +20,8 @@ $A_{total}$ : Effective total copper cross-section area for multiple strands of 
 
 $A_{pole}$ : Effective pole span area (mm^2)
 
+$AWG_{equiv}$ : Equivalent American Wire Gauge rating, derived from equivalent diameter for a bundle
+
 $B$ : Magnetic flux density ($T$, or $Wb/m^2$)
 
 $B_r$ : Remanent flux density, dependent on NdFeB grade. ($T$ or $Wb/m^2$)
@@ -23,6 +31,8 @@ $B_g$ : Airgap flux density ($T$ or $Wb/m^2$)
 $C_{SD}$ : Multiplier, 1 for delta config or $\sqrt{3}$ for star.
 
 $C_w$ : Winding buildup correction (mm)
+
+$d_{equiv}$ : Equivalent diameter for multiple strands of a certain AWG (mm)
 
 $d(n_g)$ : Strand diameter for gauge n ($mm$)
 
@@ -35,6 +45,8 @@ $E_{max}$ : Peak back-EMF ($V$)
 $f$ : Copper fill factor to available slot area
 
 $g$ : Airgap length - the very small space between rotor and stator (mm)
+
+$g'$ : Airgap length, corrected via Carter coefficients
 
 $\gamma$ : Electrical angle between two slots (rad)
 
@@ -50,13 +62,15 @@ $I_{total}$ : Combined sum of phase currents ($A$)
 
 $K$ : Proportional motor constant, for scaling KV.
 
-$K_c$ : Carter's coefficient, a multiplier for increasing effective air gap length
+$K_c, K_{cs}, K_{cs}$ : Carter's coefficient for stator and rotor, a multiplier for increasing effective air gap length
 
 $K_e$ : Motor b-EMF constant ($V/rad/s$)
 
 $K_d$ : Distribution factor
 
 $K_p$ : Pitch factor for distributed windings (=1 for concentrated)
+
+$K_{sigma} : Slot leakage coefficient
 
 $K_{skew}$ : Skew factor for PM magnets
 
@@ -106,9 +120,13 @@ $R_{phase}$ : Phase Resistance, or line-to-neutral ($\ohm$)
 
 $r_{gap}$ : Radial moment arm of the motor, distance from the center of the motor to the middle of the air gap (mm)
 
-$\rho$ : Copper resistivity ($\ohm*m$)
+$\rho$ : Resistivity ($\ohm*m$)
+
+$\sigma$ : Slot pitch to airgap ratio
 
 $T$ : Motor operating temperature ($^{\circ}C$)
+
+$t_s$ : Slot pitch (electrical rad)
 
 $\tau$ : Torque ($N*m$)
 
