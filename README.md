@@ -4,14 +4,14 @@ Self-learning and practice of applying the principles described in _Brushless PM
 This repository contains the following sub-projects:
 
 ## 1. Python Winding Calculator
-An interactive Python tool for hand-winding your stators and adjusting variables to see its effect on performance.
+An interactive Python tool and UI built using PyQt5 for hand-winding your stators and adjusting variables to see its effect on performance.
 Inputs: 
 - Stator/rotor/magnet geometry
 - Winding characteristics
 - Material characteristics, operating temperature
   
 Outputs:
-- Estimated KV and current density
+- Graphical: Estimated KV per turn count, current density vs. strands per coil
 - Peak torque
 - Strand length needed per coil
 - Phase resistance
