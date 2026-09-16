@@ -1,5 +1,5 @@
 """
-Winding Calculator. Check README for instructions and unit definitions.
+Winding Calculator. Check README @ github.com/qyugo/motormaxxing/main/code for instructions and unit definitions.
 
     python winding_calculator_gui.py
 
@@ -189,7 +189,7 @@ style_radio(coil_conn_radio)
 
 ax_phase_conn = fig.add_axes([0.50, row2_y + 0.11, 0.10, 0.05])
 ax_phase_conn.set_facecolor(SLIDER_TRACK)
-ax_phase_conn.set_title("Phase", fontsize=FS_RADIO_TITLE, color=SUBTEXT)
+ax_phase_conn.set_title("Phase Connection", fontsize=FS_RADIO_TITLE, color=SUBTEXT)
 phase_conn_radio = RadioButtons(ax_phase_conn, ("star", "delta"), activecolor=ACCENT)
 style_radio(phase_conn_radio)
 
@@ -267,21 +267,21 @@ panel(0.042, ROTOR_PANEL_BOTTOM, 0.285, ROTOR_PANEL_HEIGHT, "MAGNETIC FLUX")
 row4_bottom = 0.267
 results_top = row4_bottom - 0.01
 results_bottom = 0.025
-panel(0.042, 0.257, 0.588, 0.235, "RESULTS")
+panel(0.042, 0.227, 0.588, 0.265, "RESULTS")
 text_ax = fig.add_axes([0.13, 0.3, 0.545, results_top - results_bottom - 0.045])
 text_ax.axis("off")
 summary_text = text_ax.text(0, 1.0, "", family="monospace", fontsize=FS_SUMMARY, va="top", color=TEXT)
 
 # Charts
 panel(0.6475, 0.63, 0.34, 0.32, "")
-panel(0.6475, 0.26, 0.34, 0.352, "")
-ax1 = fig.add_axes([0.7175, 0.675, 0.2496, 0.20])
-ax2 = fig.add_axes([0.7175, 0.35, 0.2496, 0.20])
+panel(0.6475, 0.227, 0.34, 0.385, "")
+ax1 = fig.add_axes([0.7125, 0.675, 0.2496, 0.20])
+ax2 = fig.add_axes([0.7125, 0.33, 0.2496, 0.20])
 CHART_BG = "#242430"
 for ax in (ax1, ax2):
     ax.set_facecolor(CHART_BG)
 
-fig.text(0.65, 0.925, "Target KV", fontsize=FS_LABEL, color=SUBTEXT)
+fig.text(0.65, 0.925, "Target KV (RPM/V)", fontsize=FS_LABEL, color=SUBTEXT)
 ax_target_kv = fig.add_axes([0.65, 0.895, 0.10, h])
 ax_target_kv.set_facecolor(SLIDER_TRACK)
 target_kv_box = TextBox(ax_target_kv, "", initial="100", color=SLIDER_TRACK, hovercolor=SLIDER_TRACK)
@@ -476,11 +476,10 @@ def redraw(_=None):
     ax2.grid(True, alpha=0.25, color=SUBTEXT)
 
     # Results TEXT
+
     lines = [
-        "Rendering as: OUTRUNNER" if rotor_type == "outrunner" else "Rendering as: INRUNNER",
-        f"N_SLOTS={n_slots}  N_POLES={n_poles}  TEETH/PH={teeth_per_phase}  "
-        f"POLE_PAIRS={pole_pairs}  LCM={cogging_lcm}",
-        f"K: emp={k_const:.0f}  analyt={k_analytical:.0f}  (using {k_mode})",
+        f"Rendering as: OUTRUNNER | N_SLOTS={n_slots}  N_POLES={n_poles}  TEETH/PH={teeth_per_phase} POLE_PAIRS={pole_pairs}  LCM={cogging_lcm}" if rotor_type == "outrunner" else "Rendering as: INRUNNER | N_SLOTS={n_slots}  N_POLES={n_poles}  TEETH/PH={teeth_per_phase} POLE_PAIRS={pole_pairs}  LCM={cogging_lcm}",
+        f"K: Empirical = {k_const:.0f}  Analytical = {k_analytical:.0f}  (using {k_mode})",
         f"KV: {kv:.1f} ({phase_connection})   Kt: {kt:.4f} N\u00b7m/A   "
         f"\u2192 {other_label}: KV~{kv_other:.1f}",
         f"Peak Torque @ {terminal_A:.1f}A term ({phase_A:.2f}A phase): {peak_torque_Nm:.4f} N\u00b7m",
@@ -488,7 +487,7 @@ def redraw(_=None):
         f"Bg: {grade_name} Br={Br:.2f}T, L_M={Lm:.1f}mm, g={g_mm:.2f}mm \u2192 Bg={Bg_tesla:.3f}T",
         f"Kcs={Kcs:.3f} Kcr={Kcr:.3f} \u2192 g'={g_prime:.3f}mm  |  alpha_i={alpha_i:.3f}",
         f"k_sigma={k_sigma:.3f}  |  Br@{op_temp:g}C={Br_temp:.3f}T",
-        f"r_gap (derived)={r_gap_derived:.1f}mm ({rotor_type})  |  "
+        f"r_gap (derived)={r_gap_derived:.1f}mm ({rotor_type})",
         f"ring: {ring_material_radio.value_selected} t={t_ring:.1f}mm mu_r={mu_r_ring:.0f} \u2192 g_backiron={g_backiron:.4f}mm", "",
 
         f"Kw = kd\u00d7kp\u00d7ksk = {kd:.3f}\u00d7{kp:.3f}\u00d7{ksk:.3f} = {kw:.3f}",
