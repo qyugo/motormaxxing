@@ -34,11 +34,11 @@ $$
 
 However, reactance is dominant in higher RPMs (6000RPM+). For low RPMs, the impedance characteristics can be calculated without reactance:
 
-Low RPM (<2000) : $Z \approx R_{phase} + R_{load}$
+&emsp;&emsp;&emsp;Low RPM (<2000) : $Z \approx R_{phase} + R_{load}$
 
-Medium RPM (2000-6000) : $\sqrt{(R_{phase} + R_{load})^2 + X_L^2$
+&emsp;&emsp;&emsp;Medium RPM (2000-6000) : Z = $\sqrt{(R_{phase} + R_{load})^2 + X_L^2}$
 
-High RPM (>6000) : $Z = X_L \approx 2\pi * f * L$
+&emsp;&emsp;&emsp;High RPM (>6000) : $Z \approx X_L \approx 2\pi * f * L$
 
 This current is related to _braking torque_, calculated as follows:
 
