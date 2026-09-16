@@ -18,7 +18,7 @@ $$
 A(n_g) = \frac{\pi*d(n)^2}{4}
 $$
 
-When using multiple strands, an effective area $A_{total}$ from the number of strands $n_s$, as well as its equivalent AWG gauge $AMG_{equiv}$:
+When using multiple strands, an effective area $A_{total}$ from the number of strands $n_s$, as well as its equivalent AWG gauge $AWG_{equiv}$:
 
 $$
 A_{total} = n_s * A(n_g)
@@ -27,7 +27,7 @@ $$
 d_{equiv} = 2\sqrt{\frac{A_{total}}{\pi}}
 $$
 $$
-AMG_{equiv} = 36 - 39 * \log_{92} (\frac{d_{equiv}}{0.127})
+AWG_{equiv} = 36 - 39 * \log_{92} (\frac{d_{equiv}}{0.127})
 $$
 
 ## 2. Resistance
@@ -307,7 +307,7 @@ $$
 As a default, Kp = Kskew = 1 for concentrated windings and no skew. 
 
 $$
-K_p = cos(\frac{\alpha_{chord}}{2})
+K_p = cos(\frac{a_{chord}}{2})
 $$
 
 where $a$ is the chording angle, in electrical degrees, or coil pitch angle - pole pitch angle.
@@ -315,7 +315,7 @@ where $a$ is the chording angle, in electrical degrees, or coil pitch angle - po
 For skew, it is dependent on the skew angle $\alpha_{skew}$, expressed in electrical radians:
 
 $$
-K_{skew} = \frac{sin(\alpha_{skew}/2)}{\alpha_{skew}/2}
+K_{skew} = \frac{sin(a_{skew}/2)}{a_{skew}/2}
 $$
 
 For a distributed winding (q>=1), The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
