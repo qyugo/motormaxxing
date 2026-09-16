@@ -12,7 +12,7 @@ $$
 d(n_g) = 0.127 * 92 ^{\frac{36-n}{39}} 
 $$
 
-And cross sectional area $A(n_g)$, in $mm^2$:
+&emsp;&emsp;&emsp;And cross sectional area $A(n_g)$, in $mm^2$:
 
 $$
 A(n_g) = \frac{\pi*d(n)^2}{4}
@@ -38,7 +38,7 @@ $$
 \rho(T) = \rho_{20C} * (1 + \alpha (T-20))
 $$
 
-where $\alpha = 0.00393/C$ , and $\rho_{20C} = 1.724 x 10^{-8} \ohm*m$.
+&emsp;&emsp;&emsp;where $\alpha = 0.00393/C$ , and $\rho_{20C} = 1.724 x 10^{-8} \ohm*m$.
 
 Then, resistance per unit length in $\ohm/m$ is calculated using the total effective area $A_{total}$ accounting for strand count $n_s$:
 
@@ -60,10 +60,10 @@ $$
 
 ## 3. Turns, KV and Kt Relationship (For Star/Wye, 3-phase, sinusoidal)
 
-The K-constant is a function of turn count and motor KV, so it is independent of how many stator teeth/slots there are.
+The K-constant is a function of turn count and motor KV, so it is independent of how many stator teeth/slots there are. This is further elaborated on in Section 8, as it's probably the most significant scaling factor of KV and to be validated in experimental setups.
 
 $$
-K_{const} = n_t * KV
+K = n_t * KV
 $$
 
 ### i. KV to Ke
@@ -140,7 +140,7 @@ $$
 E * I_{phase} = E_{max} * I_{max} * cos^2(\theta).
 $$
 
-Finally, we can obtain the average value of %cos^2(\theta) over one period. You can derive this using cosine trig identities, but for the sake of showing why cos and sin would be equal:
+Finally, we can obtain the average value of $cos^2(\theta)$ over one period. You can derive this using cosine trig identities, but for the sake of showing why cos and sin would be equal:
 
 $$
 cos^2(\theta) + sin^2(\theta) = 1
@@ -240,9 +240,9 @@ $$
 
 A cross-check is performed using the Joule's law, $I_{phase}^2*R_{phase}$ for calculating power loss in each phase:
 
-Series: $P_{loss} = I_{coil}^2 * n_{TPP} * R_{coil}$
+&emsp;&emsp;&emsp;Series: $P_{loss} = I_{coil}^2 * n_{TPP} * R_{coil}$
 
-Parallel: $P_{loss} = I_{coil}^2 * n_{TPP}^2 * \frac{R_{coil}}{n_{TPP}} = I_{coil}^2 * n_{TPP} * R_{coil}$
+&emsp;&emsp;&emsp;Parallel: $P_{loss} = I_{coil}^2 * n_{TPP}^2 * \frac{R_{coil}}{n_{TPP}} = I_{coil}^2 * n_{TPP} * R_{coil}$
 
 The copper loss is effectively the same for both configurations.
 
@@ -306,6 +306,18 @@ $$
 
 As a default, Kp = Kskew = 1 for concentrated windings and no skew. 
 
+$$
+K_p = cos(\frac{\alpha_{chord}}{2})
+$$
+
+where $a$ is the chording angle, in electrical degrees, or coil pitch angle - pole pitch angle.
+
+For skew, it is dependent on the skew angle $\alpha_{skew}$, expressed in electrical radians:
+
+$$
+K_{skew} = \frac{sin(\alpha_{skew}/2)}{\alpha_{skew}/2}
+$$
+
 For a distributed winding (q>=1), The distribution factor $K_d$ is dependent on the electrical angle between two slots $\gamma$, slots per pole per phase $q$.
 
 $$
@@ -359,5 +371,74 @@ $$
 $$
 K = \frac{1}{\sqrt{3}} * \frac{30*(L_M + (\mu_r * g))}{\pi^2 * N_{TPP} * K_W * B_r * L_M * r_{gap} * L_{stack}}
 $$
+
+## 8. Corrections to the Corrections (Carter Coefficients/Airgap, Slot Leakage, Pole Arc, Temperature/Remanence, Back-Iron)
+
+### i. Carter Coefficient $K_{cs}$ and $K_{cr}$
+
+The first of many corrections for K, the Carter coefficient is used to correct the effective airgap length $g$ by considering the stator and rotor magnet/slot spacing.
+
+$$
+g' = K_c * g
+$$
+
+The formula for $K_c$ depends on the slot pitch $t_s$ (which is a function of diameter D and number of slots $n_{slots}$, the width of each slot opening $w_s$, and the airgap $g$.
+
+$$
+t_s = \frac{\pi*D}{n_{slots}}
+$$
+
+$$
+K_c = \frac{t_s}{t_s - \sigma*w_s}
+$$
+
+Where $\sigma$ is a function of the slot width to airgap ratio:
+
+$$
+\sigma = \frac{w_s/g}{5+ (w_s/g)}
+$$
+
+This is to be calculated for both the stator ($K_{CS}$) and the rotor ($K_{CR}$) since both contain slots. 
+
+Finally, the effective airgap g':
+
+$$
+g' = g * K_{CS} * K_{CR}
+$$
+
+Note: $K_c$ should always be greater than 1.
+
+### ii. Slot Leakage $k_{\sigma}$ and Pole Arc Correction
+
+Slot leakage $k_{sigma}$ uses an estimated range of values (0.85-0.95), rather than derived.
+
+A correction for the pole arc A_{pole} is corrected using the pole arc coefficient \alpha_i, resulting in an adjusted pole flux.
+
+$$
+\phi_{pole, corrected} = \alpha_i * B_g * A_{pole}
+$$
+
+$$
+\alpha_i = \frac{1-w_{s, rotor}}{t_{s,rotor}}
+$$
+
+### iii. Temperature Remanence Flux Derating
+
+An adjustment of remanent flux density $B_r$ is applied to account for increased operating temperatures, as it will decrease with increased temperature, affecting K.
+
+$$
+B_r(T) = B_{r, 20C} * (1 + \alpha * (T - 20))
+$$
+
+### iv. Back-Iron (Rotor Ring Material)
+
+The magnetic permeability $\mu_r$ of the rotor ring that houses the PM magnets is considered, as flux $B_g$ can be enhanced for ferromagnetic "back-iron" as opposed to a plastic FDM printed ring, for example.
+
+$$
+B_g = \frac{B_r * L_m}{g' + \frac{t_{rotor}}{\mu_{r, rotor}} + \frac{t_{stator}}{\mu_{r,stator}} }
+$$
+
+Where $\mu_r$ is the magnetic permeability, in H/m or T*m/A.
+
 
 
