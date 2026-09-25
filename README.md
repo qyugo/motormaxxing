@@ -1,5 +1,5 @@
 # Motormaxxing
-3 projects - motor analytical model, motor build, and motor testing.
+Attempt at full-stack upskilling for brushless motors
 
 Self-learning and practice while reading _Brushless PM Motor Design_ by Duane Hanselman (1994).
 
