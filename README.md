@@ -1,5 +1,5 @@
 # Motormaxxing
-Attempt at full-stack upskilling for brushless motors
+Attempt at full-stack upskilling for brushless motors. To be updated periodically.
 
 Self-learning and practice while reading _Brushless PM Motor Design_ by Duane Hanselman (1994).
 
