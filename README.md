@@ -1,6 +1,8 @@
 # Motormaxxing
 3 projects - motor analytical model, motor build, and motor testing.
+
 Self-learning and practice while reading _Brushless PM Motor Design_ by Duane Hanselman (1994).
+
 This repository contains the following sub-projects:
 
 ## 1. Python Winding Calculator
