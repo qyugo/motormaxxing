@@ -63,6 +63,9 @@ A set of two INA226 current sense monitors and an Arduino Nano will be used to m
 <img src="https://github.com/user-attachments/assets/4902706c-1f4a-40de-9310-2b2022cf7778" width = "50%"/>
 
 
+
+
+
 ## Relevant Readings
 
 ## A. Torque vs. RPM
