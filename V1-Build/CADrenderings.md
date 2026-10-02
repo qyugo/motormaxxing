@@ -1,3 +1,8 @@
+---
+title: Cad renderings for v1
+nav_exclude: true
+---
+
 ## Onshape Rendering (V1)
 <img src="https://github.com/user-attachments/assets/a7ce6ace-9ecd-4dec-a5ff-cda109243b8c" width="46%"> 
 
