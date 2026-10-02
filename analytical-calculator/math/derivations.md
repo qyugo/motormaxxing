@@ -1,3 +1,10 @@
+---
+title: Derivations
+parent: Math
+grand_parent: 1. Analytical Model + UI
+nav_order: 1
+---
+
 # Mathematical Derivations for Motor Python Calculator
 
 The following derivations explains the equations in each part of the Python code.
