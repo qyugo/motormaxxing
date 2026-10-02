@@ -1,3 +1,10 @@
+---
+title: 5. Delta vs. Wye
+parent: Theory
+grand_parent: 1. Analytical Model + UI
+nav_order: 5
+---
+
 # Delta vs. Wye Configuration
 
 Unlike a single-phase brushed motor, most BLDCs involve three distinct motor phases that are wired in a 120 degree orientation. 
