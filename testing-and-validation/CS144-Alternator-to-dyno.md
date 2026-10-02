@@ -1,3 +1,9 @@
+---
+title: CS144 Alternator to Dyno
+parent: 3. Dynamometer Build + Testing
+nav_order: 1
+---
+
 ## Old Car Alternator to Passive Dynamometer
 
 I had an old Delco CS-144 alternator laying around from my old car in high school, and have been meaning to use it for a project.
