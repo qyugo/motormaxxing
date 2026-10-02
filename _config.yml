@@ -1,0 +1,8 @@
+title: motormaxxing
+description: Three Projects for Building and Testing Motors
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+color_scheme: dark
+aux_links:
+  "Back to portfolio": "/"
