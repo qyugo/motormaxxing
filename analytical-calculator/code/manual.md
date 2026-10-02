@@ -78,6 +78,6 @@ Results and derived variables can be interpreted in detail in the "Results" sect
 <img src="https://github.com/user-attachments/assets/01664398-71e7-436d-92d2-7f5c4642aafe" width="45%">
 <img src="https://github.com/user-attachments/assets/e516549a-44ad-4fc3-b9d5-c9d18847082a" width="45%">
 
-The terminal current $I_term$ can also be adjusted based on expected testing and operating conditions. In the "Results" panel, an interpretation of the phase resistance and current per phase/coil due to configuration parameters are provided.
+The terminal current $I_{term}$ can also be adjusted based on expected testing and operating conditions. In the "Results" panel, an interpretation of the phase resistance and current per phase/coil due to configuration parameters are provided.
 
 Peak torque, KV and Kt values are also provided in the "Results" section.
