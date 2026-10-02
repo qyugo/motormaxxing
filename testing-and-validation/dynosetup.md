@@ -1,3 +1,9 @@
+---
+title: 4. Dynamometer Build + Testing
+nav_order: 4
+has_children: true
+---
+
 ## Testing and Validation Hardware
 
 In order to characterize the empirical K-values and determine how far off the analytical model was, a testing and validation setup is described in this section.
