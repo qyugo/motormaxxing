@@ -7,7 +7,9 @@ nav_order: 2
 
 Instructions for use can be found [here](manual.md).
 
-Python UI code:
+Click [here](windingcalc5.py) to download the file. 
+
+Code:
 
 ```
 python
