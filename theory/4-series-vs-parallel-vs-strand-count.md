@@ -1,3 +1,10 @@
+---
+title: 4. Series vs. Parallel Windings
+parent: Theory
+grand_parent: 1. Analytical Model + UI
+nav_order: 4
+---
+
 # Series vs. Parallel Winding
 In this section, a clarification of **series vs. parallel coil winding** will be discussed and how it differs from **strand count**. There are some sources online that I have come across that are unclear or incorrect about the distinctions of motor winding configurations.
 
