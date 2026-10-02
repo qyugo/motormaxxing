@@ -117,17 +117,17 @@ $\phi_{Pole}$ : Flux per pole (Wb)
 
 $q$ : Slots per pole per phase
 
-$R_{per_m}$ : Resistance per meter ($\omega/m$)
+$R_{per_m}$ : Resistance per meter ($\Omega/m$)
 
-$R_{coil}$ : Coil resistance ($\omega$)
+$R_{coil}$ : Coil resistance ($\Omega$)
 
-$R_{line}$ : Line-to-line resistance ($\omega$) ($R_{line} = 2*R_{phase}$ for star, $R_{line} = \frac{2}{3} * R_{phase}$ for delta)
+$R_{line}$ : Line-to-line resistance ($\Omega$) ($R_{line} = 2*R_{phase}$ for star, $R_{line} = \frac{2}{3} * R_{phase}$ for delta)
 
-$R_{phase}$ : Phase Resistance, or line-to-neutral ($\omega$)
+$R_{phase}$ : Phase Resistance, or line-to-neutral ($\Omega$)
 
 $r_{gap}$ : Radial moment arm of the motor, distance from the center of the motor to the middle of the air gap (mm)
 
-$\rho$ : Resistivity ($\omega*m$)
+$\rho$ : Resistivity ($\Omega*m$)
 
 $\sigma$ : Slot pitch to airgap ratio
 
