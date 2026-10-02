@@ -1,3 +1,10 @@
+---
+title: Unloaded - Velocity Mode
+parent: CS144 Trials
+grand_parent: 4. Dynamometer Build + Testing
+nav_order: 1
+---
+
 # Unloaded Velocity Mode Tests on Dynamometer
 
 # 0.5 rev/s
