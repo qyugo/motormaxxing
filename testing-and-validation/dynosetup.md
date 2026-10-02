@@ -1,5 +1,5 @@
 ---
-title: 4. Dynamometer Build + Testing
+title: 3. Dynamometer Build + Testing
 nav_order: 4
 has_children: true
 ---
