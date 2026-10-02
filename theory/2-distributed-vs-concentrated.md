@@ -1,3 +1,10 @@
+---
+title: 2. Distributed vs. Concentrated Windings
+parent: Theory
+grand_parent: 1. Analytical Model + UI
+nav_order: 2
+---
+
 # Distributed vs. Concentrated Windings and its Implications
 Simply put, a concentrated winding is one where each coil wraps a single tooth, while a coil in a distributed winding can span multiple teeth.
 
