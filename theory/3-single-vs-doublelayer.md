@@ -2,7 +2,7 @@
 title: 3. Single vs. Double Layer Windings
 parent: Theory
 grand_parent: 1. Analytical Model + UI
-nav_order: 2
+nav_order: 3
 ---
 
 # Single vs. Double Layer Winding Configs
