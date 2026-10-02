@@ -37,17 +37,17 @@ $$
 AWG_{equiv} = 36 - 39 * \log_{92} (\frac{d_{equiv}}{0.127})
 $$
 
-## 2. Resistance
+## 2. Copper Resistance
 
-A function for copper resistivity $\rho$ ($\ohm*m$) is estimated over motor operating temperature T for annealed copper:
+A function for copper resistivity $\rho$ ($\Omega*m$) is estimated over motor operating temperature T for annealed copper:
 
 $$
 \rho(T) = \rho_{20C} * (1 + \alpha (T-20))
 $$
 
-&emsp;&emsp;&emsp;where $\alpha = 0.00393/C$ , and $\rho_{20C} = 1.724 x 10^{-8} \ohm*m$.
+&emsp;&emsp;&emsp;where $\alpha = 0.00393/C$ , and $\rho_{20C} = 1.724 x 10^{-8} \Omega*m$.
 
-Then, resistance per unit length in $\ohm/m$ is calculated using the total effective area $A_{total}$ accounting for strand count $n_s$:
+Then, resistance per unit length in $\Omega/m$ is calculated using the total effective area $A_{total}$ accounting for strand count $n_s$:
 
 $$
 R_{per_{m}} = \frac{\rho(T)}{A_{total}*n_s}
