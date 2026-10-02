@@ -1,3 +1,10 @@
+---
+title: V2 (Current Build)
+parent: 2. Motor Builds
+nav_order: 1
+has_children: true
+---
+
 ## Motor V2
 
 <img src="https://github.com/user-attachments/assets/2e06e949-349e-40ab-b591-0b09ca89582d" width="23%"/>
@@ -19,4 +26,6 @@ More care was taken in welding the magnets to prevent magnet rub, and an updated
 This was quite satisfying to put together, and I now bring the motor (unpowered) with me wherever I go to use as a fidget spinner.
 
 https://github.com/user-attachments/assets/4998a40d-5d8d-4aae-9f4f-dfe09829d258
+
+
 
