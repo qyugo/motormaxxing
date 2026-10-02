@@ -35,6 +35,8 @@ Features:
 
 An application of the winding and construction calculators for a hand-wound 8110 stator and FDM printed stator, wired for 36N42P in star configuration for a high-torque robotic actuator.
 
+<video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
+
 <img src="https://github.com/user-attachments/assets/a7ce6ace-9ecd-4dec-a5ff-cda109243b8c" width="36%"> 
 
 <img src="https://github.com/user-attachments/assets/723905bd-2630-4893-95b4-50d02e611639" width="26%"> 
