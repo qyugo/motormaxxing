@@ -1,3 +1,8 @@
+---
+title: v1 deprecation notes
+nav_exclude: true
+---
+
 # V1 - Deprecated
 
 Evidently, the first iteration of this motor was not great. Here are the issues to be corrected for V2.
