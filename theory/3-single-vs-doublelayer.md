@@ -1,4 +1,11 @@
-# **Single vs. Double Layer Winding Configs**
+---
+title: 3. Single vs. Double Layer Windings
+parent: Theory
+grand_parent: 1. Analytical Model + UI
+nav_order: 2
+---
+
+# Single vs. Double Layer Winding Configs
 
 While researching motor construction, oftentimes I found that concepts were seemingly kept behind a layer of abstraction, whether it be intuitive for the motor overlords or a trade secret, as Hanselman himself acknowledged, but either way, there is a lack of a coherent explanation for what motor windings actually constitute.
 
