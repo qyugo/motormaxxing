@@ -5,7 +5,7 @@ nav_order: 3
 has_children: true
 ---
 
-## Instructions for Python Calculator
+Python UI
 
 Download/view the code [here](windingcalc5.py).
 
