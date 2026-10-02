@@ -27,9 +27,7 @@ All length units in mm.
   <img src="https://github.com/user-attachments/assets/efe401fd-a816-40aa-9543-e7e467f0914c" alt="Mounted on custom motor" style="width: 35%;">
   <img src="https://github.com/user-attachments/assets/0088e0bc-7fb2-4d31-a034-906d540b74ec" alt="Driver boards, front and back view" style="width: 50%;">
 </div>
-
 <br>
-
 <div style="display: flex; gap: 1rem;">
   <img src="https://github.com/user-attachments/assets/e624efa3-b559-4be4-88e2-dcd0bde2b555" alt="Mounted on custom motor" style="width: 55%;">
   <img src="https://github.com/user-attachments/assets/d0e92c8a-4a4f-446a-9635-8c5c462f336d" alt="Driver boards, front and back view" style="width: 35%;">
@@ -58,8 +56,8 @@ Rectangular NdFeB magnets are assumed.
 Note: Magnet length (the longer side of the face) is not considered in any equations. Width and thickness are used to adjust the flux and the slot leakage, respectively.
 
 <div style="display: flex; gap: 1rem;">
-  <img src="https://github.com/user-attachments/assets/c97dfa6c-ecd7-4e4a-a085-f4e36d5d4eb6" alt="Mounted on custom motor" style="width: 55%;">
-  <img src="https://github.com/user-attachments/assets/25b06e81-ad81-499e-997f-6772340b9dc2" alt="Driver boards, front and back view" style="width: 35%;">
+  <img src="https://github.com/user-attachments/assets/c97dfa6c-ecd7-4e4a-a085-f4e36d5d4eb6" alt="Mounted on custom motor" style="width: 30%;">
+  <img src="https://github.com/user-attachments/assets/25b06e81-ad81-499e-997f-6772340b9dc2" alt="Driver boards, front and back view" style="width: 45%;">
 </div>
 
 Magnetic permeability $\mu_r$ is in units of $T*m/A$. A default of 1.05 is recommended for NdFeB.
