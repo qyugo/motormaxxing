@@ -1,3 +1,10 @@
+---
+title: Unloaded - Velocity Mode
+parent: CS144 Trials
+grand_parent: 4. Dynamometer Build + Testing
+nav_order: 2
+---
+
 # Unloaded Trials for Baseline Dynamometer Error
 Some error due to eccentricity may cause some deviations from expected values.
 
