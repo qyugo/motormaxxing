@@ -1,3 +1,10 @@
+---
+title: Units and Variables
+parent: Math
+grand_parent: 1. Analytical Model + UI
+nav_order: 2
+---
+
 # Appendix
 
 Reference sheet for variables used for derivations, found [here](derivations.md). 
@@ -110,17 +117,17 @@ $\phi_{Pole}$ : Flux per pole (Wb)
 
 $q$ : Slots per pole per phase
 
-$R_{per_m}$ : Resistance per meter ($\ohm/m$)
+$R_{per_m}$ : Resistance per meter ($\omega/m$)
 
-$R_{coil}$ : Coil resistance ($\ohm$)
+$R_{coil}$ : Coil resistance ($\omega$)
 
-$R_{line}$ : Line-to-line resistance ($\ohm$) ($R_{line} = 2*R_{phase}$ for star, $R_{line} = \frac{2}{3} * R_{phase}$ for delta)
+$R_{line}$ : Line-to-line resistance ($\omega$) ($R_{line} = 2*R_{phase}$ for star, $R_{line} = \frac{2}{3} * R_{phase}$ for delta)
 
-$R_{phase}$ : Phase Resistance, or line-to-neutral ($\ohm$)
+$R_{phase}$ : Phase Resistance, or line-to-neutral ($\omega$)
 
 $r_{gap}$ : Radial moment arm of the motor, distance from the center of the motor to the middle of the air gap (mm)
 
-$\rho$ : Resistivity ($\ohm*m$)
+$\rho$ : Resistivity ($\omega*m$)
 
 $\sigma$ : Slot pitch to airgap ratio
 
