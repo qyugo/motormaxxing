@@ -1,22 +1,32 @@
+---
+title: Overview
+nav_order: 1
+permalink: /
+---
+
+
 # Motormaxxing
 Attempt at full-stack upskilling for brushless motors. To be updated periodically.
-
-Self-learning and practice while reading _Brushless PM Motor Design_ by Duane Hanselman (1994).
 
 This repository contains the following sub-projects:
 
 ## 1. Python Winding Calculator
 An interactive Python tool and UI built using PyQt5 for hand-winding your stators and adjusting variables to see its effect on performance.
+
 Inputs: 
-- Stator/rotor/magnet geometry
-- Winding characteristics
+- Stator/rotor/slot/airgap/magnet geometry
+- Winding configurations, input current
 - Material characteristics, operating temperature
   
 Outputs:
 - Graphical: Estimated KV per turn count, current density vs. strands per coil
-- Peak torque
+- Peak torque, motor constants
 - Strand length needed per coil
 - Phase resistance
+
+Features:
+- Empirical or analytical correction factors
+- Live adjustment of results
 
 <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="75%"> 
 
@@ -41,4 +51,7 @@ An application of the winding and construction calculators for a hand-wound 8110
 
 For testing and validating motor characteristics.
 
-Dynamometer setup, measuring KV, finding the empirical K and Ke/Kt constants and comparing with the analytical tool.
+Dynamometer build, measuring KV, finding the empirical K and Ke/Kt constants and comparing with the analytical tool.
+
+<img width="1280" height="960" alt="dyno361kb" src="https://github.com/user-attachments/assets/8a747d03-b4ab-476c-b65f-c94a0c34b9dc" />
+
