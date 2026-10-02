@@ -1,5 +1,5 @@
 ---
-title: Analytical BLDC Contruction Model + UI
+title: 1. Analytical Model + UI
 nav_order: 2
 has_children: true
 ---
