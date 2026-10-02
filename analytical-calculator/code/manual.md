@@ -5,6 +5,8 @@ grand_parent: 1. Analytical Model + UI
 nav_order: 1
 ---
 
+You can download the code [here](windingcalc5.py).
+
 Run the following in terminal:
  
     python winding_calculator_gui.py
@@ -21,13 +23,15 @@ Equations and UI are contained in one file.
 
 All length units in mm.
 
-<img width="334" height="256" alt="Screenshot 2026-09-15 at 3 40 15 PM" src="https://github.com/user-attachments/assets/efe401fd-a816-40aa-9543-e7e467f0914c" />
+<div style="display: flex; gap: 1rem;">
+  <img src="https://github.com/user-attachments/assets/efe401fd-a816-40aa-9543-e7e467f0914c" alt="Mounted on custom motor" style="width: 45%;">
+  <img src="https://github.com/user-attachments/assets/0088e0bc-7fb2-4d31-a034-906d540b74ec" alt="Driver boards, front and back view" style="width: 45%;">
+</div>
 
-<img src="https://github.com/user-attachments/assets/0088e0bc-7fb2-4d31-a034-906d540b74ec" width="45%"> 
-
-<img src="https://github.com/user-attachments/assets/e624efa3-b559-4be4-88e2-dcd0bde2b555" width="45%"> 
-
-<img src="https://github.com/user-attachments/assets/d0e92c8a-4a4f-446a-9635-8c5c462f336d" width="28%">
+<div style="display: flex; gap: 1rem;">
+  <img src="https://github.com/user-attachments/assets/e624efa3-b559-4be4-88e2-dcd0bde2b555" alt="Mounted on custom motor" style="width: 45%;">
+  <img src="https://github.com/user-attachments/assets/d0e92c8a-4a4f-446a-9635-8c5c462f336d" alt="Driver boards, front and back view" style="width: 45%;">
+</div>
 
 ### 2. Winding
 Note: Parallel config is currently set to maximum number of parallel paths. This may be fixed later on if there is a point, since this is uncommon for BLDCs.
