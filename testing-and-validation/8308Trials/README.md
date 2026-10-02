@@ -1,6 +1,6 @@
 ---
 title: CS144 Trials
-parent: 4. Dynamometer Build + Testing
+parent: 3. Dynamometer Build + Testing
 nav_order: 2
 has_children: true
 
