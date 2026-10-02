@@ -1,3 +1,10 @@
+---
+title: 1. Mechanical Attributes
+parent: Theory
+grand_parent: 1. Analytical Model + UI
+nav_order: 1
+---
+
 # Mechanical Construction of BLDC Motors
 In this section, an introduction to BLDC motors in the concept of electric motors is discussed, as well as mechanical characteristics and its effect on variables.
 
