@@ -1,5 +1,5 @@
 ---
-title: Unloaded - Velocity Mode
+title: Unloaded - Torque Mode
 parent: CS144 Trials
 grand_parent: 4. Dynamometer Build + Testing
 nav_order: 2
