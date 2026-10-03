@@ -41,9 +41,10 @@ Click [here](analytical-calculator/README.md) for subproject documentation.
 
 An application of the winding and construction calculators for a real prototype build.
 
-Current builds are for a 8110 stator and FDM printed stator, wired for 36N42P in star configuration for a high-torque robotic actuator.
+A few variants around a 81mm diameter, 10mm stack length silicon steel laminated stator core are built. It features a currently FDM printed rotor and housing, wired for 36N42P in star configuration for a high-torque robotic actuator.
 
-<img src="https://github.com/user-attachments/assets/a01c3e12-953a-452b-a3e7-c14a6115308f" width = "80%"/>
+<img width="5712" height="4284" alt="IMG_3794" src="https://github.com/user-attachments/assets/427e2a84-3f20-4565-b44d-6088a82d4945" />
+
 
 Click [here](V2-Build/README.md) for subproject documentation.
 
