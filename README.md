@@ -12,15 +12,15 @@ This repository contains the following three sub-projects:
 
 <div class="video-row">
   <figure>
-    <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 90%;"></video>
+    <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 95%;"></video>
     <figcaption>Analytical Motor Model & UI.</figcaption>
   </figure>
   <figure>
-    <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 110%;"></video>
+    <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
     <figcaption>BLDC Motor Builds.</figcaption>
   </figure>
   <figure>
-    <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 110%;"></video>
+    <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 100%;"></video>
     <figcaption>Dynamometer Build & test.</figcaption>
   </figure>
 </div>
