@@ -21,7 +21,7 @@ A slightly larger, 1.25mm airgap was used to account for human errors from JB we
 
 Additionally, with more stator core winding techniques developed since the first one, I was able to fit a fourth internal parallel strand per bundle, bringing the theoretical current density from 7.7 $A/mm^2$ down to 5.82 $A/mm^2$ at a 3A phase current.
 
-https://github.com/user-attachments/assets/fcafa64b-c9ab-4098-a93f-8e37dfa5ae22
+<video src="https://github.com/user-attachments/assets/fcafa64b-c9ab-4098-a93f-8e37dfa5ae22" autoplay loop muted playsinline style="width: 100%;"></video>
 
 More care was taken in welding the magnets to prevent magnet rub, and an updated bearing design resulted in a free-spinning rotor with felt cogging behavior, much like the COTS motors I own.
 
