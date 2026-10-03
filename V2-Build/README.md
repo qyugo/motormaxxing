@@ -3,14 +3,17 @@ title: 2. Motor Builds
 nav_order: 3
 has_children: true
 ---
+``` motormaxxing 2/3 ```
 
 ## Subproject 2: Building a Working Motor from Scratch
 
 Currently, a few variants of the 8110 motor have been built. 
 
-V2 (Current, works) - utilizes NdFeB N38 magnets with 1.25mm airgap.
+V2 (Current, works) - utilizes NdFeB N38 magnets with 1.25mm airgap, tested KV of ~125.
 
-V3 plans (in progress): Flux ring or CNC-machined rotor, and slightly thicker, N52 magnets
+<img width="1280" height="720" alt="IMG_3859 Large" src="https://github.com/user-attachments/assets/bb89b1c4-0304-4586-934c-db11f2844be5" />
+
+V3 plans (in progress): Flux ring or CNC-machined rotor, and slightly thicker, N52 magnets, different winding counts
 
 Some alternative/deprecated models:
 
