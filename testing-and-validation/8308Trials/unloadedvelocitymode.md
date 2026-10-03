@@ -1,7 +1,7 @@
 ---
 title: Unloaded - Velocity Mode
 parent: CS144 Trials
-grand_parent: 3. Dynamometer Build + Testing
+grand_parent: 3. Testing Hardware
 nav_order: 1
 ---
 
