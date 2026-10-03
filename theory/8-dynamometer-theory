@@ -2,7 +2,7 @@
 title: 7. Dynamometer Theory
 parent: Theory
 grand_parent: 1. Analytical Model + UI
-nav_order: 6
+nav_order: 7
 ---
 
 In order to characterize the empirical K-values and determine how far off the analytical model was, a testing and validation setup is described in this section.
