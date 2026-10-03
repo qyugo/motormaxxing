@@ -5,16 +5,11 @@ nav_order: 1
 has_children: true
 ---
 
-## Motor V2
-
-<video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
-
-
-
-
-
+# Motor V2
 
 A few updates were implemented after the failure of the V1 motor.
+
+<video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
 
 A slightly larger, 1.25mm airgap was used to account for human errors from JB weld application/buildup in constructing the rotor magnets.
 
