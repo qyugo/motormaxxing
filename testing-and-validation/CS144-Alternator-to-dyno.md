@@ -1,6 +1,6 @@
 ---
 title: CS144 Alternator to Dyno
-parent: 3. Dynamometer Build + Testing
+parent: 3. Testing Hardware
 nav_order: 1
 ---
 
