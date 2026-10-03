@@ -12,7 +12,7 @@ This repository contains the following three sub-projects:
 
 <div class="video-row">
   <figure>
-    <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 95%;"></video>
+    <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 100%;"></video>
     <figcaption>Analytical Motor Model & UI.</figcaption>
   </figure>
   <figure>
@@ -26,6 +26,7 @@ This repository contains the following three sub-projects:
 </div>
 
 ## 1. Analytical Motor Model + Python Calculator
+
 An interactive Python tool and UI built using PyQt5 for hand-winding stators and adjusting variables to see its effect on performance.
 
 | Inputs         | Outputs       | Features                 |
@@ -34,6 +35,7 @@ An interactive Python tool and UI built using PyQt5 for hand-winding stators and
 
 <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="75%"> 
 
+Click [here](analytical-calculator/README.md) for subproject documentation.
 
 ## 2. Brushless DC Motor Builds
 
@@ -43,10 +45,13 @@ Current builds are for a 8110 stator and FDM printed stator, wired for 36N42P in
 
 <img src="https://github.com/user-attachments/assets/a01c3e12-953a-452b-a3e7-c14a6115308f" width = "80%"/>
 
+Click [here](V2-Build/README.md) for subproject documentation.
 
 ## 3. Motor Testing Hardware
 
-Building a dynamometer to test characteristics of motors.
+Building a dynamometer to test characteristics of motors. One variant involves an old Delco CS-144 alternator being repurposed to a passive absorption dynamometer, and another dynamometer is being built using the EaglePower LA8308 KV90 BLDC motor.
 
 <img src="https://github.com/user-attachments/assets/8a747d03-b4ab-476c-b65f-c94a0c34b9dc" width = "80%"/>
+
+Click [here](testing-and-validation/dynosetup.md) for subproject documentation.
 
