@@ -1,54 +1,15 @@
 ---
-title: 3. Dynamometer Build + Testing
+title: 3. Testing Hardware
 nav_order: 4
 has_children: true
 ---
 
+``` motormaxxing 3/3 ```
+
 ## Testing and Validation Hardware
 
-In order to characterize the empirical K-values and determine how far off the analytical model was, a testing and validation setup is described in this section.
+Now that the motors are built, test hardware will also be built to check how well and accurate to the analytical models the motors turned out to be.
 
-## Dynamometer
+<img width="5712" height="4284" alt="IMG_3746" src="https://github.com/user-attachments/assets/48b849b5-fc23-41eb-ab63-5abf82b37806" />
 
-<img src="https://github.com/user-attachments/assets/0580764b-e500-4fc8-bfe4-44512cdba4ec" width="45%"> 
-
-Pictured: _Power Test Dynamometer._
-
-When driven, a BLDC motor produces a three-phase AC voltage output. This voltage and resultant motor speed depends on the KV rating motor, which can be extracted when both are measured.
-
-$$
-KV = RPM/V
-$$
-
-Additionally, current is generated as a function of voltage generated and total impedance Z:
-
-$$
-I = V/Z
-$$
-
-Where Z is the sum of the motor internal phase resistance $R_{phase}$, external load resistance $R_{load}$, and inductive reactance (AC opposition) $X_L$:
-
-$$
-Z = R_{phase} + R_{load} + X_L
-$$
-
-Inductive reactance is present when voltage and current are constantly changing, dependent on frequency:
-
-$$
-X_L = 2\pi * f * L
-$$
-
-However, reactance is dominant in higher RPMs (6000RPM+). For low RPMs, the impedance characteristics can be calculated without reactance:
-
-&emsp;&emsp;&emsp;Low RPM (<2000) : $Z \approx R_{phase} + R_{load}$
-
-&emsp;&emsp;&emsp;Medium RPM (2000-6000) : Z = $\sqrt{(R_{phase} + R_{load})^2 + X_L^2}$
-
-&emsp;&emsp;&emsp;High RPM (>6000) : $Z \approx X_L \approx 2\pi * f * L$
-
-This current is related to _braking torque_, calculated as follows:
-
-$$
-T_{brake} = K_t * I
-$$
 
