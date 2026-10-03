@@ -10,22 +10,25 @@ Attempt at full-stack upskilling for brushless motors. To be updated periodicall
 
 This repository contains the following three sub-projects:
 
+<div class="video-row">
+  <figure>
+    <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  preload="metadata"></video>
+    <figcaption>1. Analytical Motor Model & UI.</figcaption>
+  </figure>
+  <figure>
+    <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline preload="metadata"></video>
+    <figcaption>Fig. 2: Velocity control.</figcaption>
+  </figure>
+  <figure>
+    <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline preload="metadata"></video>
+    <figcaption>Fig. 3: Position hold under load.</figcaption>
+  </figure>
+</div>
+
 <figure>
   <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline style="width: 30%;"></video>
   <figcaption>1. Analytical Motor Model & UI.</figcaption>
 </figure>
-
-<figure>
-  <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 32%;"></video>
-  <figcaption>2. BLDC Motor Builds.</figcaption>
-</figure>
-
-<figure>
-  <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 32%;"></video>
-  <figcaption>3. Dynamometer Build & test.</figcaption>
-</figure>
-
-
 
 
 ## 1. Analytical Motor Model + Python Calculator
