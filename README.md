@@ -10,9 +10,9 @@ Attempt at full-stack upskilling for brushless motors. To be updated periodicall
 
 <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline style="width: 30%;"></video>
 
-<video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 35%;"></video>
+<video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 32%;"></video>
 
-<video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 35%;"></video>
+<video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 32%;"></video>
 
 This repository contains the following sub-projects:
 
@@ -21,7 +21,7 @@ An interactive Python tool and UI built using PyQt5 for hand-winding stators and
 
 | Inputs         | Outputs       | Features                 |
 |----------------|--------------|-----------------------|
-| Stator/rotor/slot/airgap/magnet geometry    | Graphical: Estimated KV per turn count, current density vs. strands per coil        |   Empirical or analytical correction factors    |
+| - Stator/rotor/slot/airgap/magnet geometry <br> Winding configurations, input current    | Graphical: Estimated KV per turn count, current density vs. strands per coil        |   Empirical or analytical correction factors    |
 | Winding configurations, input current  | Peak torque, motor constants  | Live adjustment of results     |
 | Material characteristics, operating temperature            | Strand length needed per coil, slot fill    | |
 |             | Phase resistance   | |
