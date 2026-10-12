@@ -13,7 +13,9 @@ V2 (Current, works) - utilizes NdFeB N38 magnets with 1.25mm airgap, tested KV o
 
 <img width="1280" height="720" alt="IMG_3859 Large" src="https://github.com/user-attachments/assets/bb89b1c4-0304-4586-934c-db11f2844be5" />
 
-V3 plans (in progress): Flux ring or CNC-machined rotor, and slightly thicker, N52 magnets, different winding counts
+V3 plans (in progress): CNC-machined rotor, and slightly thicker, N42 magnets, different winding counts
+
+Currently, it is not within my budget to get a fully CNCed rotor, but I will run a DFM analysis nonetheless.
 
 Some alternative/deprecated models:
 
