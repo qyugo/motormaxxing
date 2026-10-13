@@ -6,7 +6,7 @@ In this section, the working V2 design is modified to optimize for a metal model
 
 First, I used DFM studio to obtain a rating and estimated domestic cost using the current V2.
 
-<img width="1400" height="631" alt="Screenshot 2026-10-12 at 12 55 34 PM" src="https://github.com/user-attachments/assets/9f06c5d3-e10e-4587-a02e-c9f0a1fb6cc4" /># Design for Manufacturing a Metal Motor (V3)
+<img width="1400" height="631" alt="Screenshot 2026-10-12 at 12 55 34 PM" src="https://github.com/user-attachments/assets/9f06c5d3-e10e-4587-a02e-c9f0a1fb6cc4" />
 
 Evidently, there are issues with this model made for FDM printing that a CNC machine would either be unable to do, or be significantly more expensive.
 
