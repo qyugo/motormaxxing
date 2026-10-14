@@ -50,9 +50,12 @@ Click [here](V2-Build/README.md) for subproject documentation.
 
 ## 3. Motor Testing Hardware
 
-Building a dynamometer to test characteristics of motors. One variant involves an old Delco CS-144 alternator being repurposed to a passive absorption dynamometer, and another dynamometer is being built using the EaglePower LA8308 KV90 BLDC motor.
+Building two dynamometers to test characteristics of motors. One variant involves an old Delco CS-144 alternator being repurposed to a passive absorption dynamometer, and the other is a BLDC-BLDC coupling.
 
 <img src="https://github.com/user-attachments/assets/8a747d03-b4ab-476c-b65f-c94a0c34b9dc" width = "80%"/>
+
+<img width="1119" height="724" alt="photo_2026-10-13 20 41 12" src="https://github.com/user-attachments/assets/ce6d4c23-6e41-4a6d-b688-b08809804f53" />
+
 
 Click [here](testing-and-validation/dynosetup.md) for subproject documentation.
 
