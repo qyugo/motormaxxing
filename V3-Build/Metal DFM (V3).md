@@ -1,4 +1,11 @@
-# Design for Manufacturing a Metal Motor (V3)
+---
+title: Metal DFM (In progress)
+parent: 2. Motor Builds
+nav_order: 3
+has_children: true
+---
+
+# DFM for a Metal Motor (In progress)
 
 Clearly, a metal motor is significantly advantageous to a plastic one, for flux return as well as mechanical stability and heatsinking.
 
