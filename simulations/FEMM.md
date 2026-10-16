@@ -1,5 +1,8 @@
 # Finite Element Method Magnetics (FEMM) 2D Simulation
 
+<img width="786" height="678" alt="IMG_4128" src="https://github.com/user-attachments/assets/693b72cf-29ac-40c4-859d-2ada0fe9b138" />
+
+
 In conjunction with my analytical model, I wanted to have a numerical model as well. David Meeker's FEMM allows for a 2D simulation for calculating airgap flux density, torque (and cogging torque by a spinning Lua script), flux linkage, and back-EMF. 
 
 Both analytical model (my Python UI), the FEMM simulation, and experimental characterization using my dynos will support the creation of these motors, and be improved periodically.
@@ -28,5 +31,6 @@ Magnetic Meshing
 
 
 Static analysis
-![Uploading Screenshot 2026-10-16 at 2.21.52 PM.png…]()
+<img width="847" height="759" alt="Screenshot 2026-10-16 at 2 21 52 PM" src="https://github.com/user-attachments/assets/57a2e2cc-226f-4504-80ad-a9e601125107" />
+
 
