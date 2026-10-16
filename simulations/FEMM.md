@@ -40,5 +40,21 @@ Static analysis and airgap flux density B (42 sign changes):
 
 <img src="https://github.com/user-attachments/assets/7799095b-1bbd-4ca5-b73a-16fccf7ad9b8" width="60%"/>
 
+Initially, I was getting very small flux values, and realized I had the problem depth set to 1mm. With a 10mm stack length, I increased the depth as such, and values made much more sense.
+
+Cogging Torque:
+
+<img width="1500" height="690" alt="image" src="https://github.com/user-attachments/assets/ae49832b-148d-402b-b4ba-f715aa975d75" />
+
+
+Loaded Torque:
+
+<img width="1500" height="690" alt="image" src="https://github.com/user-attachments/assets/7023efde-69bd-43d8-870e-7015a2c8d530" />
+
+Flux Linkage (No load):
+
+<img width="1500" height="690" alt="image" src="https://github.com/user-attachments/assets/da0ce83c-ec4a-44c9-8777-5dcf4b63f782" />
+
+
 
 
