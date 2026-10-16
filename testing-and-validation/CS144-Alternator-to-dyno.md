@@ -1,13 +1,15 @@
 ---
-title: CS144 Alternator to Dyno
+title: (In progress) CS144 Alternator to Dynamometer
 parent: 3. Testing Hardware
-nav_order: 1
+nav_order: 2
 ---
 
 ## Old Car Alternator to Passive Dynamometer
 
 I had an old Delco CS-144 alternator laying around from my old car in high school, and have been meaning to use it for a project.
 Previously, the rectifier was broken, but it has since been deconstructed, hollowed out, and the three stator phases and two field wires routed out.
+
+I decided to turn it into my second dynamometer to characterize my motors to learn more about testing hardware. The unique aspect of a car alternator as a motor tester is that a resistive torque can be applied by energizing the rotor (known as the 'field windings').
 
 Unlike a BLDC motor, both the rotor and the stator are composed of windings, with the outer stator windings containing three phases, and an inrunner wound-rotor containing a single field coil, powered by two brushes via slip rings. Surrounding the rotor coil are claw poles, which act as flux concentrators to become alternating N-S magnets when powered, in a 6-pair, 12-pole configuration.
 
