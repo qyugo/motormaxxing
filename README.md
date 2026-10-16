@@ -17,7 +17,7 @@ This repository contains the following three sub-projects:
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
-    <figcaption>BLDC Motor Builds + Metal DFM</figcaption>
+    <figcaption>BLDC Motor Builds (hand wound/FDM prototypes) + Metal DFM analysis </figcaption>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 100%;"></video>
