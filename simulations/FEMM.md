@@ -7,7 +7,7 @@ has_children: true
 # Finite Element Method Magnetics (FEMM) Simulation for N42, 0.75mm airgap (V3) Motor
 
 
-In conjunction with my analytical model, I wanted to have a numerical model as well. David Meeker's FEMM allows for a 2D simulation for calculating airgap flux density, torque (and cogging torque by a spinning Lua script), flux linkage, and back-EMF. 
+In conjunction with my analytical model, I wanted to have a numerical model as well. David Meeker's FEMM program allows for a 2D simulation for calculating airgap flux density, torque (and cogging torque by a spinning Lua script), flux linkage, and back-EMF. 
 
 Both analytical model (my Python UI), the FEMM simulation, and experimental characterization using my dynos will support the creation of these motors, and be improved periodically.
 
@@ -58,4 +58,23 @@ Loaded Torque:
 
 <img width="1500" height="690" alt="image" src="https://github.com/user-attachments/assets/7023efde-69bd-43d8-870e-7015a2c8d530" />
 
+## 3. Results and Comparison with Analytical Model
 
+With these results, I inputted the same parameters into my Python calculator and obtained the error in results between the numerical FEMM and my analytical UI.
+
+<img width="671" height="242" alt="Screenshot 2026-10-16 at 5 04 50 PM" src="https://github.com/user-attachments/assets/7faf0c1f-d677-4b49-ba42-f0d04702fc74" />
+
+Using the same airgap, back-iron thickness, motor configurations (36N42P, star, stator diameter and stack length, etc):
+
+| Quantity | Analytical | FEMM | Accuracy (FEMM vs Analytical) |
+|---|---|---|---|
+| KV (rpm/V) | 78.2 | 81.6 | +4.3% |
+| Kt (N·m/A) | 0.1057 | 0.1012 | −4.3% |
+| Peak torque @ 8 A (N·m) | 0.8456 | 0.808 (interpolated) | −4.4% |
+| Turns for 100 KV | 6.3 | 6.5 | +3.2% |
+| Bg (T) | 0.613 | 0.712 | +16% |
+| $\alpha_i$ | 0.762 | 0.722 | −5% |
+| Current density @ 8 A (A/mm²) | 15.53 | 15.5 | -0.193% |
+| Flux linkage $\lambda$, peak (mWb) | 3.355 | 3.218 | −4.1% |
+
+Overall, the analytical model, with corrections to slot leakage applied, was quite close to the numerical model.
