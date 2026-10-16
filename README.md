@@ -13,7 +13,7 @@ This repository contains the following three sub-projects:
 <div class="video-row">
   <figure>
     <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 100%;"></video>
-    <figcaption>Analytical Motor Model & UI, within 5% accuracy to FEMM simulations.</figcaption>
+    <figcaption>Analytical Motor Model & UI in Python, checked against numerical FEMM simulations (<5% accuracy on Kv, Kt, $\lambda$, and more).</figcaption>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
