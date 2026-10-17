@@ -21,7 +21,7 @@ Regardless, any small amount of misalignment, which is inevitable when humans ar
 
 <img width="802" height="459" alt="image" src="https://github.com/user-attachments/assets/4f614efc-b791-4096-aa8f-b247c576eb3d" />
 
-KV Test of Known Motor: LA8308
+## 1. KV Test of Known Motor: LA8308
 
 This motor is listed to have 90KV. First, voltage of phases A and B were measured at speeds of 1, 2, 3, 5, 7, and 10 rev/s without any load. Additionally, Iq of the powered motor was measured through the driver for input current.
 
@@ -49,7 +49,7 @@ Iq:
 | 10 | 11.93 | 13.16 | 12.55 | -0.336 |
 
 Measured values:
-| Parameter | Value | Derivation|
+| Parameter | Value | Derivation |
 |---|---|---|
 | Ke | 0.098 V·s/rad | Vpp/2 vs speed slope |
 | Kv | 97 rpm/V | 9.549 / Ke |
@@ -57,4 +57,27 @@ Measured values:
 | Friction torque | 0.029 N·m | Mean Iq * Kt |
 
 Therefore, there is a 7.78% over the provided KV by the manufacturer claim of 90. I know of one other person, Aaed Musa, who has tested the KV of the same LA8308 motor by Eaglepower, getting a value of 108. Thus, we can assume this error is nominal and that my testing setup is sufficient for the purpose of giving a baseline measurement to my motors.
+
+## 2. Testing of PETG Custom Motor (with N38 magnets, airgap 1.25mm)
+
+<img src="https://github.com/user-attachments/assets/fc727cfe-42b0-4685-a48a-393f91d2df39" width="15%" />
+<img src="https://github.com/user-attachments/assets/ed354f6e-8052-4396-9ac5-ece1b1381b5d" width="15%"/>
+<img src="https://github.com/user-attachments/assets/1a0cad23-32cd-4f43-9009-7f3e82ea98b2" width="15%"/>
+<img src="https://github.com/user-attachments/assets/462c0ef4-2819-423f-b3fa-6790294d4735" width="15%"/>
+<img src="https://github.com/user-attachments/assets/95a58547-6fed-41e1-9d8a-7d4fbd6f39b4" width="15%"/>
+<img src="https://github.com/user-attachments/assets/aa29ee3c-8f49-4a31-877d-14946f19b42b" width="15%"/>
+
+<img width="1870" height="1020" alt="image" src="https://github.com/user-attachments/assets/5e9c3d68-e05a-4475-a2d5-004c20a7f530" />
+
+
+## Results
+
+YV83310-PETG-N38-1.25
+ 
+| Parameter | Value |
+|---|---|
+| Ke (line-to-line peak) | 0.041 V·s/rad |
+| KV | 232 rpm/V |
+| Kt (8.27 / KV) | 0.036 N·m/A |
+| Drive-side drag (Iq × 0.085 N·m/A) | 0.025 N·m |
 
