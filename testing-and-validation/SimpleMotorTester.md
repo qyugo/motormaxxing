@@ -48,3 +48,13 @@ Iq:
 | 7 | 8.43 | 8.28 | 8.36 | -0.352 |
 | 10 | 11.93 | 13.16 | 12.55 | -0.336 |
 
+Measured values:
+| Parameter | Value | Derivation|
+|---|---|---|
+| Ke | 0.098 V·s/rad | Vpp/2 vs speed slope |
+| Kv | 97 rpm/V | 9.549 / Ke |
+| Kt | 0.085 N·m/A | 8.27 / Kv |
+| Friction torque | 0.029 N·m | Mean Iq * Kt |
+
+Therefore, there is a 7.78% over the provided KV by the manufacturer claim of 90. I know of one other person, Aaed Musa, who has tested the KV of the same LA8308 motor by Eaglepower, getting a value of 108. Thus, we can assume this error is nominal and that my testing setup is sufficient for the purpose of giving a baseline measurement to my motors.
+
