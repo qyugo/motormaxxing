@@ -25,7 +25,7 @@ This repository contains the following three sub-projects:
   </figure>
 </div>
 
-## 1. Analytical Motor Model + Python Calculator
+## 1. Analytical Motor Model + Python Calculator (and FEMM sim)
 
 An interactive Python tool and UI built using PyQt5 for hand-winding stators and adjusting variables to see its effect on performance, with correction factors applied to account for slot leakage/flux loss. Full derivations, code, and process available.
 
@@ -35,7 +35,9 @@ Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an er
 |----------------|--------------|-----------------------|
 | - Stator/rotor/slot/airgap/magnet geometry <br> - Winding configurations, input current <br> - Material characteristics, operating temperature   | - Graphical outputs: Estimated KV per turn count, current density vs. strands per coil <br> Peak torque, motor constants <br> - Strand length needed per coil <br> - Phase resistance     |   - Empirical or analytical correction factors <br> - Live adjustments of results    |
 
-<img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="75%"> 
+<img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="50%"> 
+<img src="https://github.com/user-attachments/assets/bd5209dd-4083-486c-b190-2b37665033e1" width = "45%"/>
+
 
 Click [here](analytical-calculator/README.md) for subproject documentation.
 
