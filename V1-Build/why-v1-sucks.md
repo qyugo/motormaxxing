@@ -1,5 +1,5 @@
 ---
-title: V1 (Deprecated Build)
+title: V1 Build Process (Deprecated)
 parent: 2. Motor Builds
 nav_order: 2
 has_children: true
