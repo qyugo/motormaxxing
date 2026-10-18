@@ -1,7 +1,7 @@
 ---
-title: FEMM Simulations
-nav_order: 6
-has_children: true
+title: V3 FEA Simulation (Metal)
+parent: FEMM Simulations
+nav_order: 1
 ---
 
 # Finite Element Method Magnetics (FEMM) Simulation for N42, 0.75mm airgap (V3) Motor
