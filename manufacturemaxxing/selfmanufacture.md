@@ -1,7 +1,14 @@
+---
+title: Low-Cost Self-Manufacture for V3
+parent: 2. Motor Builds
+nav_order: 4
+has_children: true
+---
+
 # Manufacturing Plan for V3 Motor
 10/18/2026
 
-This outlines a potential plan for self-manufacturing some motors out of metal at a fraction cost of getting it machined in full, but with many extra steps from me. I figured this would be a great learning opportunity regardless.
+This outlines a potential plan for self-manufacturing some motors out of metal at a fraction cost of getting it machined in full, but with many extra steps from me. I figured this would be a great learning opportunity regardless, and it would allow me to make multiple iterations and make adjustments without relying on an external shop in the meantime.
 
 I may still get the motor machined or at least some quotes, but after running DFM analysis the cost seemed too great for one piece. I want to be able to create many of these.
 
