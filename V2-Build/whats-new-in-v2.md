@@ -1,5 +1,5 @@
 ---
-title: V2 (Current Build)
+title: V2 (Working Plastic Build)
 parent: 2. Motor Builds
 nav_order: 1
 has_children: true
