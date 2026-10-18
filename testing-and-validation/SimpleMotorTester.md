@@ -38,7 +38,6 @@ Iq:
 
 <img width="772" height="421" alt="image" src="https://github.com/user-attachments/assets/918a1037-c419-4c82-b5d6-1b7fef7c4c32" />
 
-
 | rev/s | Vpp A-C (V) | Vpp B-C (V) | avg Vpp (V) | Iq mean (A) |
 |---|---|---|---|---|
 | 1 | 1.30 | 1.47 | 1.39 | -0.334 |
@@ -49,6 +48,7 @@ Iq:
 | 10 | 11.93 | 13.16 | 12.55 | -0.336 |
 
 Measured values:
+
 | Parameter | Value | Derivation |
 |---|---|---|
 | Ke | 0.098 V·s/rad | Vpp/2 vs speed slope |
