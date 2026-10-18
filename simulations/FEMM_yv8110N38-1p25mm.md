@@ -1,6 +1,12 @@
-# FEMM vs. Analytical vs. Experimental for PETG Motor
+---
+title: V2 FEA Simulation
+parent: FEMM Simulations
+nav_order: 2
+---
 
-Version: YV8110, N38 NdFeB magnets, 1.25mm airgap, PETG backiron. 
+# FEMM for V2 PETG Motor
+
+Version: YV8110 V2, N38 NdFeB magnets, 1.25mm airgap, PETG backiron. 
 
 First, the rotor was redrawn in FEMM to change the backiron material to air (as the magnetic permeability for PETG is essentially the same).
 
