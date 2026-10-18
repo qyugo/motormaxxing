@@ -8,7 +8,9 @@ nav_order: 2
 Instructions for use can be found [here](manual.md).
 
 Releases (Click to download)
+
 [Qyugo Winding Calculator V6.0](windingcalc6.py) (Current Version, 10/17/26)
+
 [Qyugo Winding Calculator V5.0](windingcalc5.py) (*Deprecated - Issue with backiron thickness affecting results when plastic is selected)
 
 Code (V6.0 update):
