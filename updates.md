@@ -1,3 +1,8 @@
+---
+title: Update Log
+nav_order: 8
+---
+
 # Update Log
 
 Updates since site publication (10/1/26 onwards)
