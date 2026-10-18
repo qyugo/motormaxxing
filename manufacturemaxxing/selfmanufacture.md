@@ -78,7 +78,8 @@ A 3.75" by 3.5" ID steel tube was almost identical to the backiron I had designe
 
 Since 1020 steel is almost identical to the 1018 run on the simulations, I decided to purchase some and rerun the simulations, although I would expect not too big of a difference.
 
-https://www.speedymetals.com/ShoppingCart.aspx?add=true&ReturnUrl=https%3a%2f%2fwww.speedymetals.com%2fpc-3551-8242-3-34-od-x-125-wall-dom-steel-tube.aspx
+[Speedy Metals](https://www.speedymetals.com/pc-3551-8242-3-34-od-x-125-wall-dom-steel-tube.aspx)
+
 For 1ft, this was funny:
 <img width="1370" height="449" alt="Screenshot 2026-10-18 at 2 37 38 PM" src="https://github.com/user-attachments/assets/652ba0ba-0771-4bc2-9eba-a0274c52e42e" />
 
