@@ -7,14 +7,17 @@ nav_order: 2
 
 Instructions for use can be found [here](manual.md).
 
-Click [here](windingcalc5.py) to download the file. 
+Releases (Click to download)
+[Qyugo Winding Calculator V6.0](windingcalc6.py) (Current Version, 10/17/26)
+[Qyugo Winding Calculator V5.0](windingcalc5.py) (*Deprecated - Issue with backiron thickness affecting results when plastic is selected)
 
-Code:
+Code (V6.0 update):
 
 ```
-python
 """
-Winding Calculator. Check README @ github.com/qyugo/motormaxxing/main/code for instructions and unit definitions.
+Winding Calculator V6.0.0. Check README @ github.com/qyugo/motormaxxing/main/code for instructions and unit definitions.
+
+Version 6.0 - Updated 10/17/26 for 'backiron thickness' impacting KV while plastic motor is selected.
 
     python winding_calculator_gui.py
 
@@ -404,7 +407,11 @@ def redraw(_=None):
 
     t_ring = magnet_sliders["t_ring"].val
     mu_r_ring = RING_MU_R[ring_material_radio.value_selected]
-    g_backiron = t_ring / mu_r_ring
+
+    if ring_material_radio.value_selected == "metal":
+        g_backiron = t_ring / mu_r_ring
+    else:
+        g_backiron = 0.26 * t_pole   # plastic
 
     g_prime = g_mm * Kcs * Kcr + g_backiron
     Br_temp = Br * (1 + (-0.0012) * (op_temp - 20))
