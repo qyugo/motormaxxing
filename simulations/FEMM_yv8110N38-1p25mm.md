@@ -1,5 +1,5 @@
 ---
-title: V2 FEA Simulation
+title: V2 FEA Simulation (Plastic)
 parent: FEMM Simulations
 nav_order: 2
 ---
