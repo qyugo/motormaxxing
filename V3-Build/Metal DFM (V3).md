@@ -1,5 +1,5 @@
 ---
-title: Metal DFM (In progress)
+title: CNC DFM Analysis for V3
 parent: 2. Motor Builds
 nav_order: 3
 has_children: true
@@ -42,6 +42,8 @@ Iteration 3
 Iteration 4: $1113
 <img width="1432" height="605" alt="Screenshot 2026-10-15 at 12 43 38 PM" src="https://github.com/user-attachments/assets/9ecff2c6-34f7-4ceb-8053-d2a9f8ba6a7e" />
 
-Iteration 5: 
+At this point, I figured CNC milling this thing may be not the most economical, but perhaps scalable through automation if I wanted to make a bunch, with a simpler design.
+
+I decided to explore the possibility of self-manufacture, with just a lathe and some aluminum and steel 1018 extrusions in the [next section](../manufacturemaxxing/selfmanufacture.md).
 
 
