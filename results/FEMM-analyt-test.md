@@ -1,3 +1,9 @@
+---
+title: Results (Analytical vs. Numerical vs. Experimental)
+nav_order: 7
+has_children: true
+---
+
 # FEMM vs. Analytical vs. Experimental Results (V2 ane V3)
 
 In this section, a small summary regarding the results of comparing FEMM simulation, my analytical model, and actual experimental results using my custom simple dynamometer, to see how the results fare.
