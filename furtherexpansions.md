@@ -1,6 +1,6 @@
 ---
 title: Further Expansions
-nav_order: 5
+nav_order: 9
 ---
 
 ## Additional Motormaxxing projects you can check out
