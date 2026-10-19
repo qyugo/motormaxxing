@@ -29,7 +29,7 @@ This repository contains the following three sub-projects:
 
 An interactive Python tool and UI built using PyQt5 for hand-winding stators and adjusting variables to see its effect on performance, with correction factors applied to account for slot leakage/flux loss. Full derivations, code, and process available.
 
-Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an error between a numerical software and my analytical model. The results were quite close, with KV, Kt, peak torque, and flux linkage being **accurate to within 5%** for the metal model, and within 1% for the plastic model. 
+Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an error between a numerical software and my analytical model. The results were quite close, with KV, Kt, peak torque, and flux linkage being **accurate to within 5%** for the metal model.
 
 | Inputs         | Outputs       | Features                 |
 |----------------|--------------|-----------------------|
