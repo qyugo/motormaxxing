@@ -1,10 +1,10 @@
 ---
-title: (In progress) CS144 Alternator to Dynamometer
+title: Car Alternator to Dynamometer (In progress) 
 parent: 3. Testing Hardware
 nav_order: 2
 ---
 
-## Old Car Alternator to Passive Dynamometer
+## Old Car Alternator to Passive Dynamometer (YVDyno-CS144) - On Hold
 
 I had an old Delco CS-144 alternator laying around from my old car in high school, and have been meaning to use it for a project.
 Previously, the rectifier was broken, but it has since been deconstructed, hollowed out, and the three stator phases and two field wires routed out.
