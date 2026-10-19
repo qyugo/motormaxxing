@@ -1,8 +1,11 @@
 ---
-title: Car Alternator to Dynamometer (In progress) 
+title: Car Alternator to Dynamometer (On Hold) 
 parent: 3. Testing Hardware
+has_children: true
 nav_order: 2
 ---
+
+
 
 ## Old Car Alternator to Passive Dynamometer (YVDyno-CS144) - On Hold
 
