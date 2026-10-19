@@ -17,6 +17,8 @@ This version utilizes NdFeB N38 magnets with 1.25mm airgap, with 8 turns per too
 
 This one managed to spin with both the BG431B-ESC1 as well as the ODrive S1, as well as my custom YVGESC driver.
 
+Click [here](whats-new-in-v2.md) for V2 documentation.
+
 ## V3 (in progress metal motor)
 
 The initial plan after the working V2 model is to build a new CNC-machined rotor, and slightly thicker, N42 magnets, with the same 8 turn/tooth winding pattern, and four internal parallel strands.
@@ -27,8 +29,12 @@ Currently, it is not within my budget to get a fully CNCed rotor, but ran some D
 
 However, in progress is a cost-optimized manufacturing process that allows me to (hopefully) create many metal motors without sending a CNC milling quote. I figured with some creative design to account for the rotor/stator hubs and the back-iron for the magnets, I could create a metal motor using just a lathe, that is both multimaterial and a fraction of machining cost.
 
+Click [here](../V3-Build/Metal_DFM_(V3).md) for V3 documentation.
+
 
 ## Deprecated Models
+
+Some extra build process documentation for deprecated models is shown [here](../V1-Build/why-v1-sucks.md).
 
 V1: PETG, NdFeB N38 steel-epoxy-welded, Bad bearings, caused wobble/rotor would stick to one side of the stator core. 3 internal parallel strands, as it was my first winding, and couldn't fit a fourth, unlike when I wound V2.
 
@@ -45,7 +51,7 @@ V1.2: Since the rotor was welded, I took this opportunity to print a 8010 PETG s
 
 V2.1: Prototype with slightly adjusted rotor depth so I can fasten adapters/couplings/gears while saving space.
 
-<img width="1280" height="1073" alt="IMG_4590 Large 2" src="https://github.com/user-attachments/assets/15bcb1bf-0727-4e41-95e3-a15b0a47ca72" />
+<img src="https://github.com/user-attachments/assets/15bcb1bf-0727-4e41-95e3-a15b0a47ca72" width="60%"/>
 
 
 
