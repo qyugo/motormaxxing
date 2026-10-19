@@ -18,7 +18,7 @@ The car alternator dyno project has temporarily been put to the side, but would 
 
 <div class="video-row">
   <figure>
-    <img src="https://github.com/user-attachments/assets/9a4455ea-821a-432e-95ff-a6baf23898cf" width = "48%"/>
+    <img src="https://github.com/user-attachments/assets/9a4455ea-821a-432e-95ff-a6baf23898cf" width = "100%"/>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/e5dad279-2620-4b45-801a-4a83d0d39b01" autoplay loop muted playsinline style="width: 100%;"></video>
