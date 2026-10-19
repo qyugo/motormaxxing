@@ -19,18 +19,15 @@ However, even with the wobble reduced, the initial 0.75mm airgap was still too s
 
 
 ## Onshape Rendering (V1)
-<img src="https://github.com/user-attachments/assets/a7ce6ace-9ecd-4dec-a5ff-cda109243b8c" width="41%"> 
-
-<img src="https://github.com/user-attachments/assets/62f3f525-e84b-4208-b68e-1c0a4dcc3f11" width="40%"> 
+<img src="https://github.com/user-attachments/assets/a7ce6ace-9ecd-4dec-a5ff-cda109243b8c" width="45%"> 
+<img src="https://github.com/user-attachments/assets/62f3f525-e84b-4208-b68e-1c0a4dcc3f11" width="44%"> 
 
 ## Build Images
 
 <img src="https://github.com/user-attachments/assets/a1a84211-8a4f-4c95-97cf-2f2ce5fdd472" width="45%">
-
 <img src="https://github.com/user-attachments/assets/0f1625bd-41c0-4248-8769-97198c05deed" width="45%"> 
 
 <img src="https://github.com/user-attachments/assets/e3f66143-3f8e-49ec-9755-bfc6c50cd72c" width="47%"> 
-
 <img src="https://github.com/user-attachments/assets/575e070e-9562-4655-95c3-17ae9103bcbb" width="43%"> 
 
 
