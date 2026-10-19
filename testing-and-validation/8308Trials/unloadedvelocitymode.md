@@ -1,6 +1,6 @@
 ---
 title: Unloaded - Velocity Mode
-parent: CS144 Trials
+parent: Car Alternator to Dynamometer (On Hold) 
 grand_parent: 3. Testing Hardware
 nav_order: 1
 ---
