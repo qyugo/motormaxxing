@@ -13,15 +13,15 @@ This repository contains the following three sub-projects:
 <div class="video-row">
   <figure>
     <video src="https://github.com/user-attachments/assets/fb8ee87a-f4b3-4df1-b4ab-6bcff8b6aa19" autoplay loop muted playsinline  style="width: 100%;"></video>
-    <figcaption>Analytical Motor Model & UI in Python, checked against numerical FEMM simulations (<5% accuracy on Kv, Kt, $\lambda$, and more).</figcaption>
+    <figcaption>Analytical Motor Model & UI in Python, checked against numerical FEMM simulations (<5% error on Kv, Kt, flux linkage, and peak torque for V1 and V2).</figcaption>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/bda9567a-19c8-4262-996d-6315954c4c0d" autoplay loop muted playsinline style="width: 100%;"></video>
-    <figcaption>BLDC Motor Builds (hand wound/FDM prototypes) + Metal DFM analysis </figcaption>
+    <figcaption>BLDC Motor Builds (hand wound/FDM prototypes) + Metal DFM analysis + low-cost manufacturing plan </figcaption>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/21d9bb4c-289d-42fb-8375-9db78879503d" autoplay loop muted playsinline style="width: 100%;"></video>
-    <figcaption>Testing Rigs/Dynamometer Builds + Motor Characterization results.</figcaption>
+    <figcaption>Testing Rigs/Dynamometer Builds + Motor Characterization results and validation of analytical/numerical models.</figcaption>
   </figure>
 </div>
 
@@ -29,7 +29,7 @@ This repository contains the following three sub-projects:
 
 An interactive Python tool and UI built using PyQt5 for hand-winding stators and adjusting variables to see its effect on performance, with correction factors applied to account for slot leakage/flux loss. Full derivations, code, and process available.
 
-Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an error between a numerical software and my analytical model. The results were quite close, with KV, Kt, peak torque, and flux linkage being **accurate to within 5%.**
+Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an error between a numerical software and my analytical model. The results were quite close, with KV, Kt, peak torque, and flux linkage being **accurate to within 5%** for the metal model, and within 1% for the plastic model. 
 
 | Inputs         | Outputs       | Features                 |
 |----------------|--------------|-----------------------|
@@ -38,8 +38,10 @@ Additionally, I ran an FEA simulation using FEMM by David Meeker to obtain an er
 <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="50%"> 
 <img src="https://github.com/user-attachments/assets/bd5209dd-4083-486c-b190-2b37665033e1" width = "45%"/>
 
+Left: My Python calculator. Right: FEMM Simulation.
 
-Click [here](analytical-calculator/README.md) for subproject documentation.
+
+Click [here](analytical-calculator/README.md) for Analytical Calculator subproject documentation.
 
 ## 2. Brushless DC Motor Builds
 
@@ -50,16 +52,15 @@ A few variants around a 81mm diameter, 10mm stack length silicon steel laminated
 <img width="5712" height="4284" alt="IMG_3794" src="https://github.com/user-attachments/assets/427e2a84-3f20-4565-b44d-6088a82d4945" />
 
 
-Click [here](V2-Build/README.md) for subproject documentation.
+Click [here](V2-Build/README.md) for Motor Builds subproject documentation.
 
 ## 3. Motor Testing Hardware
 
 Building two dynamometers to test characteristics of motors. One variant involves an old Delco CS-144 alternator being repurposed to a passive absorption dynamometer, and the other is a BLDC-BLDC coupling.
 
 <img src="https://github.com/user-attachments/assets/8a747d03-b4ab-476c-b65f-c94a0c34b9dc" width = "40%"/>
-
 <img src="https://github.com/user-attachments/assets/ce6d4c23-6e41-4a6d-b688-b08809804f53" width = "40%"/>
 
 
-Click [here](testing-and-validation/dynosetup.md) for subproject documentation.
+Click [here](testing-and-validation/dynosetup.md) for Testing Hardware subproject documentation.
 
