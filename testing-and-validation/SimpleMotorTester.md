@@ -18,8 +18,8 @@ Regardless, any small amount of misalignment, which is inevitable when humans ar
 
 3D Printed coupling with TPU spider
 
-<img src="https://github.com/user-attachments/assets/48c2a41c-f05c-48eb-ab0b-eecd31b74835" width="45%" />
-<img src="https://github.com/user-attachments/assets/4f614efc-b791-4096-aa8f-b247c576eb3d" width="45%"/>
+<img src="https://github.com/user-attachments/assets/48c2a41c-f05c-48eb-ab0b-eecd31b74835" width="42%" />
+<img src="https://github.com/user-attachments/assets/4f614efc-b791-4096-aa8f-b247c576eb3d" width="48%"/>
 
 
 <video src="https://github.com/user-attachments/assets/0116e5dc-5b18-4582-9af8-66d0b9e99fde" autoplay loop muted playsinline style="width: 80%;"></video>
