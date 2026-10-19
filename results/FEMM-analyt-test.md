@@ -13,12 +13,13 @@ In this section, a small summary regarding the results of comparing FEMM simulat
     <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="100%"> 
   </figure>
   <figure>
-    <img src="https://github.com/user-attachments/assets/870c4d00-eefb-4721-9796-e27da1f11586" width="100%"/>
+    <img src="https://github.com/user-attachments/assets/5dbb15be-4aae-4647-a0c9-37264906a703" width="100%"/>
   </figure>
   <figure>
     <video src="https://github.com/user-attachments/assets/4f748ef8-2a20-4e77-80fb-5e194c695dd6" autoplay loop muted playsinline style="width: 100%;"></video>
   </figure>
 </div>
+
 
 ## V3 (Metal, N42, 0.75mm Airgap)
 
