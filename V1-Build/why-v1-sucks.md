@@ -5,7 +5,7 @@ nav_order: 2
 has_children: true
 ---
 
-# V1, V1.1, and V1.2 (And Why It Sucks)
+# V1, V1.1, and V1.2 (Deprecated)
 
 Evidently, the first few iterations of this motor was not great. Here are the issues to be corrected for V2. However, the build documentation is still provided.
 
