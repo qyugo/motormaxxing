@@ -59,8 +59,7 @@ Click [here](V2-Build/README.md) for Motor Builds subproject documentation.
 Building two dynamometers to test characteristics of motors. One variant involves an old Delco CS-144 alternator being repurposed to a passive absorption dynamometer, and the other is a BLDC-BLDC coupling.
 
 <img src="https://github.com/user-attachments/assets/8a747d03-b4ab-476c-b65f-c94a0c34b9dc" width = "40%"/>
-<img src="https://github.com/user-attachments/assets/ce6d4c23-6e41-4a6d-b688-b08809804f53" width = "40%"/>
-
+<img src="https://github.com/user-attachments/assets/ce6d4c23-6e41-4a6d-b688-b08809804f53" width = "45%"/>
 
 Click [here](testing-and-validation/dynosetup.md) for Testing Hardware subproject documentation.
 
