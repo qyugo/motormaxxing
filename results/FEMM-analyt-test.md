@@ -4,9 +4,33 @@ nav_order: 7
 has_children: true
 ---
 
-# FEMM vs. Analytical vs. Experimental Results (V2 ane V3)
+# FEMM vs. Analytical vs. Experimental Results (V2 and V3)
 
 In this section, a small summary regarding the results of comparing FEMM simulation, my analytical model, and actual experimental results using my custom simple dynamometer, to see how the results fare.
+
+<div class="video-row">
+  <figure>
+    <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="75%"> 
+  </figure>
+  <figure>
+    <img src="https://github.com/user-attachments/assets/870c4d00-eefb-4721-9796-e27da1f11586" width="30%"/>
+  </figure>
+  <figure>
+    <video src="https://github.com/user-attachments/assets/4f748ef8-2a20-4e77-80fb-5e194c695dd6" autoplay loop muted playsinline style="width: 100%;"></video>
+  </figure>
+</div>
+
+<div style="display: flex; gap: 1rem;">
+  <img src="https://github.com/user-attachments/assets/140b6cac-92cd-4652-8e88-956db5992207" width="30%"> 
+  <img src="https://github.com/user-attachments/assets/870c4d00-eefb-4721-9796-e27da1f11586" width="30%"/>
+  <video src="https://github.com/user-attachments/assets/4f748ef8-2a20-4e77-80fb-5e194c695dd6" autoplay loop muted playsinline style="width: 100%;"></video>
+</div>
+
+
+
+
+
+
 
 ## V3 (Metal, N42, 0.75mm Airgap)
 
