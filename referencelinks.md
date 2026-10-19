@@ -1,4 +1,13 @@
-# Reference Links (Ignore, mostly)
+---
+title: Build & Manufacturing References
+parent: 2. Motor Builds
+nav_order: 5
+has_children: true
+---
+
+# Reference Links for Build (Ignore, mostly)
+
+Will detail my notes later on, mainly a placeholder for additional motor builds.
 
 ## References for Additional Motor Build Sizes
 
