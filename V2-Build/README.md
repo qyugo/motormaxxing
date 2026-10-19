@@ -29,7 +29,7 @@ Currently, it is not within my budget to get a fully CNCed rotor, but ran some D
 
 However, in progress is a cost-optimized manufacturing process that allows me to (hopefully) create many metal motors without sending a CNC milling quote. I figured with some creative design to account for the rotor/stator hubs and the back-iron for the magnets, I could create a metal motor using just a lathe, that is both multimaterial and a fraction of machining cost.
 
-Click [here](../V3-Build/Metal_DFM_(V3).md) for V3 documentation.
+Click [here](../V3-Build/MetalDFMV3).md) for V3 documentation.
 
 
 ## Deprecated Models
