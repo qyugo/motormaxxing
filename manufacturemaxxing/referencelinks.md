@@ -7,7 +7,7 @@ has_children: true
 
 # Reference Links for Build (Ignore, mostly)
 
-Will detail my notes later on, mainly a placeholder for additional motor builds.
+Mainly my notes for motor building and ideas I threw out, you can ignore or look through my thought process for manufacturing.
 
 ## References for Additional Motor Build Sizes
 
