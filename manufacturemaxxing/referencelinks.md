@@ -12,7 +12,11 @@ Mainly my notes for motor building and ideas I threw out, you can ignore or look
 ## References for Additional Motor Build Sizes
 
 [5010 360KV](https://www.aliexpress.us/item/3256808405937047.html?src=google&src=google&albch=shopping&acnt=708-803-3821&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en3256808405937047&ds_e_product_merchant_id=5624153765&ds_e_product_country=US&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19108282527&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=19108284222&gbraid=0AAAAAD6I-hFJdyKhKtfZGLgfkQuHeVW7_&gclid=CjwKCAjwuczWBhA9EiwAYGgEoXsyYURURWX5uJWw-of04oYaytGZ9i78lU_TqRBxlGMwoT7CA4VP_hoCrvkQAvD_BwE&gatewayAdapt=glo2usa)
+
 [MN5008 KV170](https://store.tmotor.com/product/mn5008-kv170-motor-antigravity-type.html?srsltid=AU7gw4V-OcFtF5goojWpRQwu-bVZmz46KKwmAm_DrGtvjoQnUY7u4Igg)
+
+[Cubemars AKE90-8 KV35](https://www.cubemars.com/product/ake90-8-kv35-quasi-direct-drive-actuator.html)
+<img src="https://github.com/user-attachments/assets/c181eea7-8e8d-40dc-9512-73bf3e6ebf61" width="50%" />
 
 ## References for Manufacturing Hardware
 
