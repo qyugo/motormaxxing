@@ -46,4 +46,9 @@ At this point, I figured CNC milling this thing may be not the most economical, 
 
 I decided to explore the possibility of self-manufacture, with just a lathe and some aluminum and steel 1018 extrusions in the [next section](../manufacturemaxxing/selfmanufacture.md).
 
+Iteration 5: $223 domestic, ~73.62 international
+
+<img width="1350" height="872" alt="Screenshot 2026-10-20 at 4 28 57 PM" src="https://github.com/user-attachments/assets/18ea4a03-b0bd-4921-84e4-456ffe806399" />
+
+
 
