@@ -24,26 +24,7 @@ Aluminum 6061 extrusions were considered for the cheapest possible build, as alu
 
 Rather than fully CNC machining the machine, the rotor can be split into multiple segments, such as the backiron for the magnets and the rotor hub.
 
-
 A final BOM will be created for this manufacturing method.
-
-4.0in OD / 102mm OD x 98mm ID aluminum (1 ft/30cm)
-
-<img src="https://github.com/user-attachments/assets/799b4883-57af-4511-a9c9-2436c4549c78" width = "22%"/>
-
-<img width="468" height="177" alt="Screenshot 2026-10-18 at 12 46 21 PM" src="https://github.com/user-attachments/assets/b6d6a283-9f34-4971-9a86-13e6844bca29" />
-
-[HPS Performance Products](https://hpsperformanceproducts.com/products/hps-straight-6061-aluminum-tubing-tube-pipe-piping-seamless?variant=40434209095870)
-
-Cost: $50.38
-
-For a 21.5mm thick rotor, and an 8.5mm stator (stator will be discussed later), this money can theoretically contribute to 10.15 motors, accounting for losses perhaps 9 or 10.
-
-For reference, this is how the ring would sit on the current motor:
-
-<img width="570" height="484" alt="Screenshot 2026-10-18 at 1 39 36 PM" src="https://github.com/user-attachments/assets/4b845984-126e-4675-b39c-865fc5a06aca" />
-
-This idea is currently on hold, as it may be better to design 
 
 ## Steel Backiron
 
@@ -61,18 +42,7 @@ The inner diameter would be more important, with 88.7mm providing a 0.75mm airga
 
 With some proper turning clean-up, concentricity can be achieved with some small errors.
 
-* Source 1: WRONG DIAMETER - DEPRECATED*
-
-<img src="https://github.com/user-attachments/assets/ff04ac89-ee32-4318-98e4-b8fad2731485" />
-
-[Mcmaster 1018 Steel](https://www.mcmaster.com/products/grade-1018-steel/shape~round-tube/?s=grade-1018-steel)
-For 1ft, $17.85, not including shipping & tax
-
-<img src="https://github.com/user-attachments/assets/550214ea-2af6-4341-b2f0-e5ac8fa5d64d" />
-
-* END *
-
-Source 2:
+Source 2: Speedy Metals
 
 A 3.75" by 3.5" ID steel tube was almost identical to the backiron I had designed, perhaps by coincidence. The best option I could find was by Speedy Metals, who as far as I can see, only provide C1020 materials for their steel tubing, with a perfect size available.
 
@@ -120,5 +90,34 @@ With this, aluminum cylinders were considered for the stator and rotors, which c
 Depending on the errors on the steel backiron, the aluminum can be adjusted with a small lathe, as it is a much softer metal.
 
 Buying a full cylinder would definitely be more expensive than a tube extrusion, but I decided to explore the cost analysis regardless.
+
+Initially, the rotor I had made looks like this:
+
+<img src="https://github.com/user-attachments/assets/d4c6ddce-4ced-4194-884c-b8d3cf14880c" width="45%"/>
+<img src="https://github.com/user-attachments/assets/687ccf31-0295-48e4-ba6f-6d8f4a952d5c" width="45%"/>
+
+Most of the rotor can be lathed, and if I wanted to bore the pockets, I'd need a mill to do so. It was now worth considering if having the five windows are worth it, since I had initially put them there for aesthetic reasons and to match the COTS motors I had bought.
+
+However, the COTS motors that I have (such as the Eaglepower LA8308) are high-torque agricultural drone motors, which are meant to spin at relatively high speeds, which effectively allow such windows to allow for heat dissipation form a fan / the propellers themselves.
+
+The motors I intend to make will run at relatively low speed, and heat from the windings should transfer to the housing via conduction. There is an argument that removing some mass from the rotor would allow for a smaller rotational inertia, and theoretically better performance, but it is very little compared to the magnet strength and commutation, especially for an aluminum 6061 rotor cap.
+
+Therefore, I decided to remove the windows for V3, or the first metal build. It may not look as cool, but the robots shouldn't care about whether their stator windings are visible through the cap.
+
+To further save costs on V1, I entertained the idea of forgoing a bulky stator shell altogether. Technically, only an inner part is needed, perhaps I can find a metal cylinder that can fit the stator, but otherwise maybe I can keep it 3D printed, further saving costs. The windings may be exposed and it may not be a good idea for the driver since it will be right behind it, but I will explore this option for now.
+
+I actually found out that some of CubeMars' motors are constructed like this. I also found out that their bearing setup is almost the same as mine.
+
+<img src="https://github.com/user-attachments/assets/baaa36f8-acd7-4fbb-9c0d-655e6b9e8d85" width = "45%"/>
+
+<img src="https://github.com/user-attachments/assets/4ec382fa-e2d2-4a1e-a881-1d13367eb768" width="45%"/>
+
+<img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="45%"/>
+
+<img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="50%"/>
+
+
+
+
 
 
