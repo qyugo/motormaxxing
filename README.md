@@ -49,7 +49,7 @@ An application of the winding and construction calculators for a real prototype 
 
 A few variants around a 81mm diameter, 10mm stack length silicon steel laminated stator core are built. It features a currently FDM printed rotor and housing, wired for 36N42P in star configuration for a high-torque robotic actuator.
 
-<img width="5712" height="4284" alt="IMG_3794" src="https://github.com/user-attachments/assets/427e2a84-3f20-4565-b44d-6088a82d4945" />
+<img src="https://github.com/user-attachments/assets/427e2a84-3f20-4565-b44d-6088a82d4945" width="80%"/>
 
 <img src="https://github.com/user-attachments/assets/39d741a6-8d30-40f8-89d6-67e81b22d2ef" width="45%" />
 <img src="https://github.com/user-attachments/assets/d805ee43-378d-4688-92ee-d504cf9315d2" width="45%" />
