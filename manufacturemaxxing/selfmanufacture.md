@@ -109,11 +109,9 @@ To further save costs on V1, I entertained the idea of forgoing a bulky stator s
 I actually found out that some of CubeMars' motors are constructed like this. I also found out that their bearing setup is almost the same as mine.
 
 <img src="https://github.com/user-attachments/assets/baaa36f8-acd7-4fbb-9c0d-655e6b9e8d85" width = "45%"/>
-
 <img src="https://github.com/user-attachments/assets/4ec382fa-e2d2-4a1e-a881-1d13367eb768" width="45%"/>
 
 <img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="45%"/>
-
 <img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="50%"/>
 
 
