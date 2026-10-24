@@ -56,14 +56,9 @@ Currently, a few plastic motors have been built and tested. I am working on a lo
 <img src="https://github.com/user-attachments/assets/39d741a6-8d30-40f8-89d6-67e81b22d2ef" width="45%" />
 <img src="https://github.com/user-attachments/assets/d805ee43-378d-4688-92ee-d504cf9315d2" width="45%" />
 
+Currently working on an Aluminum 6061 + 1020 Steel version for better testing and heat performance:
 
-
-https://github.com/user-attachments/assets/67364a27-335a-46b9-86a4-3b94f681b875
-
-
-
-
-
+<video src="https://github.com/user-attachments/assets/67364a27-335a-46b9-86a4-3b94f681b875" autoplay loop muted playsinline style="width: 100%;"></video>
 
 Click [here](V2-Build/README.md) for Motor Builds subproject documentation.
 
