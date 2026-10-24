@@ -6,7 +6,9 @@ has_children: true
 ---
 
 # Manufacturing Plan for V3 Motor
-10/18/2026
+10/18/2026, last update 10/24/26
+
+<video src="https://github.com/user-attachments/assets/67364a27-335a-46b9-86a4-3b94f681b875" autoplay loop muted playsinline style="width: 100%;"></video>
 
 This outlines a potential plan for self-manufacturing some motors out of metal at a fraction cost of getting it machined in full, but with many extra steps from me. I figured this would be a great learning opportunity regardless, and it would allow me to make multiple iterations and make adjustments without relying on an external shop in the meantime.
 
