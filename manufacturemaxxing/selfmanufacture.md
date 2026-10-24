@@ -58,7 +58,7 @@ However, testing out their by-the-inch, which has a cutting tolerance of up to 1
 
 <img width="513" height="72" alt="Screenshot 2026-10-18 at 2 45 23 PM" src="https://github.com/user-attachments/assets/55210fea-24e6-47e2-b97d-6e5455cfa87e" />
 
-If I were to cut them myself, I would save approximately $1 per piece (if using the 12in $63.33 option), and $1.83 per piece if their identical 12in by-the-inch option really costs 42.22.
+If I were to cut them myself, I would save approximately 1 USD per piece (if using the 12in 63.33 USD option), and 1.83 USD per piece if their identical 12in by-the-inch option really costs 42.22 USD.
 
 I decided to go for a set of 6 pieces cut by them, for prototyping. Since my magnets are all slightly under 12mm, some additional spacing for joining the ring to the rest of the aluminum housing would be helpful.
 It is also worth noting that their cuts are listed as having a tolerance of -0, and +1/8". Therefore, I placed out a few steps of 1/8" to visualize my decision.
