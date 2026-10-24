@@ -5,10 +5,11 @@ nav_order: 1
 grandparent: 2. Motor Builds
 ---
 
+
+
+# DFM Analysis for a Metal Motor (Progress Documentation)
+
 <img src="https://github.com/user-attachments/assets/88967bac-4197-41ef-8c05-6a97c542ee5e" width= "68%"/>
-
-
-# DFM for a Metal Motor (Progress Documentation)
 
 Clearly, a metal motor is significantly advantageous to a plastic one, for flux return as well as mechanical stability and heatsinking.
 
