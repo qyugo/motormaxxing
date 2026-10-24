@@ -1,8 +1,8 @@
 ---
 title: CNC DFM Analysis for V3
-parent: 2. Motor Builds
-nav_order: 3
-has_children: true
+parent: Low-Cost Self-Manufacture for V3
+nav_order: 1
+grandparent: 2. Motor Builds
 ---
 
 <img src="https://github.com/user-attachments/assets/88967bac-4197-41ef-8c05-6a97c542ee5e" width= "68%"/>
