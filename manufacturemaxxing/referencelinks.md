@@ -1,8 +1,8 @@
 ---
 title: Build & Manufacturing References
-parent: 2. Motor Builds
-nav_order: 5
-has_children: true
+parent: Low-Cost Self-Manufacture for V3
+nav_order: 2
+grandparent: 2. Motor Builds
 ---
 
 # Reference Links for Build (Ignore, mostly)
