@@ -114,6 +114,16 @@ I actually found out that some of CubeMars' motors are constructed like this. I 
 <img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="45%"/>
 <img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="50%"/>
 
+# Steel 1020 Backiron
+
+<img src="https://github.com/user-attachments/assets/763c6088-4990-49d0-9aea-ecd384048939" width="45%"/>
+
+<img src="https://github.com/user-attachments/assets/3dc96f55-f104-4636-a1fe-ddcf82145cb9" width="45%"/>
+
+After receiving the backiron, I had pre-made a rotor that I may lathe out of Aluminum 6061 down the line, but as of now the pre-made PETG one is a nice fit. Since the back-iron is ferromagnetic now, I placed one N42 magnet in and the 0.75mm airgap and unpowered cogging behavior checks out, with no magnet rub.
+
+https://github.com/user-attachments/assets/f5de7939-0478-416b-95c8-aa7ad7838be4
+
 
 
 
