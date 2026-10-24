@@ -58,6 +58,12 @@ Currently, a few plastic motors have been built and tested. I am working on a lo
 
 
 
+https://github.com/user-attachments/assets/67364a27-335a-46b9-86a4-3b94f681b875
+
+
+
+
+
 
 Click [here](V2-Build/README.md) for Motor Builds subproject documentation.
 
