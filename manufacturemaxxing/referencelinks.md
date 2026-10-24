@@ -16,7 +16,7 @@ Mainly my notes for motor building and ideas I threw out, you can ignore or look
 [MN5008 KV170](https://store.tmotor.com/product/mn5008-kv170-motor-antigravity-type.html?srsltid=AU7gw4V-OcFtF5goojWpRQwu-bVZmz46KKwmAm_DrGtvjoQnUY7u4Igg)
 
 [Cubemars AKE90-8 KV35](https://www.cubemars.com/product/ake90-8-kv35-quasi-direct-drive-actuator.html)
-<img src="https://github.com/user-attachments/assets/c181eea7-8e8d-40dc-9512-73bf3e6ebf61" width="50%" />
+<img src="https://github.com/user-attachments/assets/c181eea7-8e8d-40dc-9512-73bf3e6ebf61" width="10%" />
 
 ## References for Manufacturing Hardware
 
