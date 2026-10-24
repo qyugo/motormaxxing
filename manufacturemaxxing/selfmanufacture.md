@@ -113,7 +113,9 @@ I actually found out that some of CubeMars' motors are constructed like this, wh
 <img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="22%"/>
 <img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="22.5%"/>
 
-# Steel 1020 Backiron
+Therefore, some slices of Aluminum 6061 cylinder with a diameter of 3.75" will be considered, the length of which will be determined after the steel backiron rings are received, to determine how much length will be needed for the rotor cap.
+
+# Steel 1020 Backiron Build
 
 <img src="https://github.com/user-attachments/assets/763c6088-4990-49d0-9aea-ecd384048939" width="45%"/>
 <img src="https://github.com/user-attachments/assets/3dc96f55-f104-4636-a1fe-ddcf82145cb9" width="45%"/>
@@ -122,9 +124,11 @@ After receiving the backiron, I had pre-made a rotor that I may lathe out of Alu
 
 <video src="https://github.com/user-attachments/assets/f5de7939-0478-416b-95c8-aa7ad7838be4" autoplay loop muted playsinline style="width: 100%;"></video>
 
+The measured length of each cut was about 16.5mm. This was more than their shop had stated for maximum additional tolerance.
 
+# Aluminum Cylinder Build
 
-
+After receiving the backiron, another order was to be placed for a few aluminum discs of diameter 3.75mm. I decided to go for a 1/2" thickness (+1/8in, -0inch), since my rotor design needs some additional thickness for the bearing insert, which isn't too important. However, given the previous tolerances, it gives the best approachable range of potential discs received.
 
 
 
