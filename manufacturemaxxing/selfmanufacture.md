@@ -17,7 +17,6 @@ I may still get the motor machined or at least some quotes, but after running DF
 V3 Rotor Housing 3D Model and Drawing/Tolerances (as of 10/18/26):
 
 <img src="https://github.com/user-attachments/assets/86c84d82-8e12-489f-bcc5-1d07f3cae146" width = "33%" />
-
 <img src="https://github.com/user-attachments/assets/a89edce6-e723-45f8-9f1b-4bcc0dd74425" width = "60%"/>
 
 ## Aluminum Shell (deprecated, initial research)
@@ -52,7 +51,7 @@ Since 1020 steel is almost identical to the 1018 run on the simulations, I decid
 
 [Speedy Metals](https://www.speedymetals.com/pc-3551-8242-3-34-od-x-125-wall-dom-steel-tube.aspx)
 
-For 1ft, this was funny:
+For 1ft, this was funny, since it was more expensive for an identical by-the-inch option:
 <img width="1370" height="449" alt="Screenshot 2026-10-18 at 2 37 38 PM" src="https://github.com/user-attachments/assets/652ba0ba-0771-4bc2-9eba-a0274c52e42e" />
 
 However, testing out their by-the-inch, which has a cutting tolerance of up to 1/8 in, seeing if I can go for 1/2 inch blocks:
@@ -75,9 +74,8 @@ Length Decision table:
 
 I decided to go for the 1/2" + 1/8in tolerance. Below are some views, where the silver ring is the expected 1020 steel part, with red being the possible 1/8" added tolerance, overlayed and compared to the existing rotor cap and magnets in Onshape.
 
-<img width="730" height="263" alt="Screenshot 2026-10-18 at 3 19 35 PM" src="https://github.com/user-attachments/assets/4996d710-cab0-401a-9e6f-55fab2a193b5" />
-
-<img width="654" height="205" alt="Screenshot 2026-10-18 at 3 20 36 PM" src="https://github.com/user-attachments/assets/d0256fa2-c88b-4568-a59c-a4ceaefa84fe" />
+<img src="https://github.com/user-attachments/assets/4996d710-cab0-401a-9e6f-55fab2a193b5" width="39.5%"/>
+<img src="https://github.com/user-attachments/assets/d0256fa2-c88b-4568-a59c-a4ceaefa84fe" width="45%"/>
 
 For 6 pieces, this is 21.11. Shipping was 23.64.
 
@@ -108,13 +106,12 @@ Therefore, I decided to remove the windows for V3, or the first metal build. It 
 
 To further save costs on V1, I entertained the idea of forgoing a bulky stator shell altogether. Technically, only an inner part is needed, perhaps I can find a metal cylinder that can fit the stator, but otherwise maybe I can keep it 3D printed, further saving costs. The windings may be exposed and it may not be a good idea for the driver since it will be right behind it, but I will explore this option for now.
 
-I actually found out that some of CubeMars' motors are constructed like this. I also found out that their bearing setup is almost the same as mine.
+I actually found out that some of CubeMars' motors are constructed like this, which was a nice surprise.
 
-<img src="https://github.com/user-attachments/assets/baaa36f8-acd7-4fbb-9c0d-655e6b9e8d85" width = "45%"/>
-<img src="https://github.com/user-attachments/assets/4ec382fa-e2d2-4a1e-a881-1d13367eb768" width="45%"/>
-
-<img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="45%"/>
-<img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="50%"/>
+<img src="https://github.com/user-attachments/assets/baaa36f8-acd7-4fbb-9c0d-655e6b9e8d85" width = "22%"/>
+<img src="https://github.com/user-attachments/assets/4ec382fa-e2d2-4a1e-a881-1d13367eb768" width="22.5%"/>
+<img src="https://github.com/user-attachments/assets/d71a56f4-d82d-4821-b491-417a571517a0" width="22%"/>
+<img src="https://github.com/user-attachments/assets/7b5cb2b8-39ce-4092-8a95-f23880032cc2" width="22.5%"/>
 
 # Steel 1020 Backiron
 
